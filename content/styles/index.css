@@ -42,6 +42,7 @@ h1, h2, h3 {
 #intro-row {
     background-color: #e74b3c;
     text-align: center;
+    overflow-y: hidden; /* hides the lower box shadow on the brackets screenshot */
 }
     #intro-row h1 {
         font-size: 40px;
@@ -64,7 +65,11 @@ h1, h2, h3 {
         margin-bottom: 25px;
     }
     #brackets-screenshot {
-        width: 500px;
+        width: 50%;
+        box-shadow: 0 20px 100px 10px #000;
+        overflow-y: hidden;
+        display: block; /* Thanks! http://www.htmlforums.com/css/t-margin-under-image-in-ie-73651.html */
+        margin: 0 auto;
     }
 
 .bubbles {
