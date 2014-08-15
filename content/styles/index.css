@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: #2c3e50;
     text-align: center;
     font-family: 'Lato';
 }
@@ -25,6 +25,7 @@ h1, h2, h3 {
     width: 125px;
     height: 50px;
     display: block;
+    margin: 0 auto;
     border: none;
     cursor: pointer;
     font-size: 15px;
@@ -34,13 +35,23 @@ h1, h2, h3 {
         color: #e74b3c;
         border: 1px solid #fff;
     }
-    .standard:hover {
-        background-color: #e74b3c;
+        .standard:hover {
+            background-color: #e74b3c;
+            color: #fff;
+        }
+    .inverted {
         color: #fff;
+        border: 1px solid #e74b3c;
+        background-color: #e74b3c;
     }
+        .inverted:hover {
+            background-color: #fff;
+            color: #e74b3c;
+        }
 
 #intro-row {
     background-color: #e74b3c;
+    color: #fff;
     text-align: center;
     overflow-y: hidden; /* hides the lower box shadow on the brackets screenshot */
 }
@@ -75,7 +86,7 @@ h1, h2, h3 {
 .bubbles {
     text-align: center; /* centers the middle bubble */
     margin-bottom: 50px;
-    margin-top: 25px;
+    margin-top: 50px;
     color: #2c3e50;
 }
     .bubbles .bubble {
