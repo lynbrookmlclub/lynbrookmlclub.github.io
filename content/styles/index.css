@@ -107,16 +107,16 @@ h1, h2, h3 {
         .bubbles .bubble p {
             font-size: 20px;
         }
-        .bubbles .bubble:first-child {
+        .bubbles #html-bubble {
             float: left;
             margin-left: 50px;
             border-top: 10px solid #2ecc71;
         }
-        .bubbles .bubble:nth-child(2) {
+        .bubbles #css-bubble {
             display: inline-block; /* this is basically a replacement for float:center, it'll cause it to position based on the text-align:center in .bubbles */
             border-top: 10px solid #8e44ad;
         }
-        .bubbles .bubble:last-child {
+        .bubbles #js-bubble {
             float: right;
             margin-right: 50px;
             border-top: 10px solid #3498db;
@@ -161,10 +161,26 @@ h1, h2, h3 {
 }
 
 @media all and (max-width:700px) {
-    .bubbles .bubble:nth-child(n) {
-        float: none;
-        display: block;
-        width: 70%;
-        margin: 0 auto;
+    #intro-row h3 {
+        font-size: 20px;
+        width: 90%;
     }
+
+    #intro-row #brackets-screenshot {
+        width: 90%;
+    }
+
+    .bubbles {
+        margin-top: 0;
+    }
+
+        .bubbles #html-bubble,
+        .bubbles #css-bubble,
+        .bubbles #js-bubble {
+            float: none;
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
 }
