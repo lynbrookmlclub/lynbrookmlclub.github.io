@@ -22,13 +22,13 @@ h1, h2, h3 {
 }
 
 .button {
-    width: 125px;
-    height: 50px;
+    width: 150px;
+    height: 55px;
     display: block;
     margin: 0 auto;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px;
 }
     .standard {
         background-color: #fff;
