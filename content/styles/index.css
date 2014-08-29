@@ -53,28 +53,37 @@ h1, h2, h3 {
             color: #e74b3c;
         }
 
-#intro-row {
+#welcome-row {
     background-color: #e74b3c;
     color: #fff;
     text-align: center;
     overflow-y: hidden; /* hides the lower box shadow on the brackets screenshot */
 }
-    #intro-row h1 {
+    #welcome-row h1 {
         font-size: 40px;
         padding-top: 40px;
     }
-    #intro-row h2 {
+    #welcome-row h2 {
         font-size: 20px;
         margin-top: 10px;
         font-weight: 400;
     }
-    #intro-row h3 {
+    #welcome-row h3 {
         font-size: 25px;
         width: 50%;
         margin: 0 auto;
         margin-top: 15px;
     }
-    #intro-row button {
+    #welcome-row code {
+        font-size: 25px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        display: block;
+    }
+        #welcome-row code input {
+            font-size: 20px;
+        }
+    #welcome-row button {
         margin: 0 auto;
         margin-top: 25px;
         margin-bottom: 25px;
@@ -165,12 +174,12 @@ h1, h2, h3 {
 }
 
 @media all and (max-width:700px) {
-    #intro-row h3 {
+    #welcome-row h3 {
         font-size: 20px;
         width: 90%;
     }
 
-    #intro-row #brackets-screenshot {
+    #welcome-row #brackets-screenshot {
         width: 90%;
     }
 
