@@ -6,14 +6,14 @@
     </head>
     <body>
         <div class="row" id="welcome-row">
-            <h1>Lynbrook Web Dev</h1>
-            <h2>LEARN, CREATE, AND PLAY</h2>
+            <h1 class="title">Lynbrook Web Dev</h1>
+            <h2 class="subtitle">LEARN, CREATE, AND PLAY</h2>
 
             <h3>
                 In the Web Dev club, we'll teach you everything you need to know to get up and running with web development.
             </h3>
 
-            <a class="standard sign-up button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
+            <a target="_blank" class="standard sign-up button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
             
             <h3>
                 Think you can't do it? Try changing the background color of this section.
@@ -24,10 +24,13 @@
             </code>
             
             <h3>
-                Hooked? <a href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">Sign up</a> for the Web Dev club to learn even more!
+                Hooked? <a target="_blank" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">Sign up</a> for the Web Dev club to learn even more!
             </h3>
             
-            <br/>
+            <h3>
+                Scroll down for more info
+            </h3>
+            
             <br/>
 
             <img src="content/images/codebrowser-cropped.png" alt="web dev" id="brackets-screenshot" />
@@ -67,7 +70,7 @@
             <h3>Meetings inside room 000 every (blank)day at lunch.</h3>
             <h3>Come join us.</h3>
             <br/><br/>
-            <a class="inverted standard sign-up button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
+            <a target="_blank" class="inverted standard sign-up button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
         </div>
         
         <script type="text/javascript">
@@ -75,11 +78,11 @@
             var colorInput = document.getElementById("hook-color");
             var welcomeRow = document.getElementById("welcome-row");
 
-            colorInput.onkeyup = function() {
-                var currColor = colorInput.value;
-                //if (colors.indexOf(currColor) != -1) {
-                    welcomeRow.style.backgroundColor = currColor;
-                //}
+            colorInput.onkeyup = function () {
+                //we're gonna rely on the browser ignoring incorrect colors
+                //so that we don't need to check against a list of every
+                //possible color
+                welcomeRow.style.backgroundColor = colorInput.value;
             };
         </script>
     </body>

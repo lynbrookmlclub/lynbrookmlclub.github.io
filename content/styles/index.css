@@ -64,35 +64,35 @@ a {
     text-align: center;
     overflow-y: hidden; /* hides the lower box shadow on the brackets screenshot */
 }
-    #welcome-row h1 {
+    #welcome-row .title {
         font-size: 40px;
         padding-top: 40px;
     }
-    #welcome-row h2 {
+    #welcome-row .subtitle {
         font-size: 20px;
         margin-top: 10px;
         font-weight: 400;
     }
-    #welcome-row h3 {
-        font-size: 25px;
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-    #welcome-row code {
-        font-size: 25px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        display: block;
-    }
-        #welcome-row code input {
-            font-size: 20px;
-        }
+
+    #welcome-row h3,
+    #welcome-row code,
     #welcome-row button {
         margin: 0 auto;
         margin-top: 25px;
         margin-bottom: 25px;
     }
+        #welcome-row h3 {
+            font-size: 25px;
+            width: 50%;
+        }
+        #welcome-row code {
+            font-size: 25px;
+            display: block;
+        }
+            #welcome-row code input {
+                font-size: 20px;
+            }
+
     #brackets-screenshot {
         width: 60%;
         box-shadow: 0 10px 48px -3px #000;
