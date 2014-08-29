@@ -12,7 +12,7 @@
             <h3>
                 In the Web Dev club, we'll teach you everything you need to know to get up and running with web development.
             </h3>
-            
+
             <a class="standard sign-up button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
             
             <h3>
@@ -20,8 +20,12 @@
             </h3>
             
             <code>
-                #welcome-row { background-color: <input type="text" placeholder="orange" /> }
+                #welcome-row { background-color: <input type="text" placeholder="orange" id="hook-color" /> }
             </code>
+            
+            <h3>
+                Hooked? <a href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">Sign up</a> for the Web Dev club to learn even more!
+            </h3>
             
             <br/>
             <br/>
@@ -64,6 +68,19 @@
             <h3>Come join us.</h3>
             <br/><br/>
             <a class="inverted standard sign-up button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
-</div>
+        </div>
+        
+        <script type="text/javascript">
+
+            var colorInput = document.getElementById("hook-color");
+            var welcomeRow = document.getElementById("welcome-row");
+
+            colorInput.onkeyup = function() {
+                var currColor = colorInput.value;
+                //if (colors.indexOf(currColor) != -1) {
+                    welcomeRow.style.backgroundColor = currColor;
+                //}
+            };
+        </script>
     </body>
 </html>
