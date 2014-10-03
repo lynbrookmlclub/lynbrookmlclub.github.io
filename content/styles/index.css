@@ -15,6 +15,13 @@ h1, h2, h3 {
     margin: 0;
 }
 
+h3, code, button {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
 .row {
     position: relative;
     width: 100%;
@@ -73,25 +80,9 @@ a {
         margin-top: 10px;
         font-weight: 400;
     }
-
-    #welcome-row h3,
-    #welcome-row code,
-    #welcome-row button {
-        margin: 0 auto;
-        margin-top: 25px;
-        margin-bottom: 25px;
+    #welcome-row h3 {
+        width:50%;
     }
-        #welcome-row h3 {
-            font-size: 25px;
-            width: 50%;
-        }
-        #welcome-row code {
-            font-size: 25px;
-            display: block;
-        }
-            #welcome-row code input {
-                font-size: 20px;
-            }
 
     #brackets-screenshot {
         width: 60%;
@@ -100,6 +91,23 @@ a {
         display: block; /* Thanks! http://www.htmlforums.com/css/t-margin-under-image-in-ie-73651.html */
         margin: 0 auto;
     }
+
+.hook h3,
+.hook code {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+    .hook h3 {
+        width: 50%;
+    }
+    .hook code {
+        font-size: 25px;
+        display: block;
+    }
+        .hook code input {
+            font-size: 20px;
+        }
 
 .bubbles {
     text-align: center; /* centers the middle bubble */
