@@ -112,6 +112,9 @@ a {
         background-color: #f4f4f4;
         height: 300px;
         padding: 10px;
+
+        border: 1px solid;
+        border-top-width:15px;
     }
         .bubbles .bubble h1 {
             font-weight: 600;
@@ -128,16 +131,16 @@ a {
         .bubbles #html-bubble {
             float: left;
             margin-left: 50px;
-            border-top: 10px solid #2ecc71;
+            border-color: #2ecc71;
         }
         .bubbles #css-bubble {
             display: inline-block; /* this is basically a replacement for float:center, it'll cause it to position based on the text-align:center in .bubbles */
-            border-top: 10px solid #8e44ad;
+            border-color: #8e44ad;
         }
         .bubbles #js-bubble {
             float: right;
             margin-right: 50px;
-            border-top: 10px solid #3498db;
+            border-color: #3498db;
         }
 
 .info {
