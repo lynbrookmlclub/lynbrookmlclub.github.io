@@ -9,6 +9,7 @@ html, body {
     font-family: 'Lato';
 }
 
+/* default stylings */
 h1, h2, h3 {
     font-weight: 300;
     text-align: center;
@@ -22,6 +23,10 @@ h3, code, button {
     font-size: 25px;
 }
 
+h3 {
+    width: 50%;
+}
+
 .row {
     position: relative;
     width: 100%;
@@ -30,7 +35,6 @@ h3, code, button {
 
 a {
     color: currentColor;
-    
 }
 
 .button {
@@ -65,6 +69,7 @@ a {
             color: #e74b3c;
         }
 
+/* styles for the big orange welcome row at the top */
 #welcome-row {
     background-color: #e74b3c;
     color: #fff;
@@ -93,23 +98,16 @@ a {
         margin: 0 auto;
     }
 
-.hook h3,
+/* styles for the "hook", that lets the user play around with CSS styles */
 .hook code {
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    font-size: 25px;
+    display: block;
 }
-    .hook h3 {
-        width: 50%;
+    .hook code input {
+        font-size: 20px;
     }
-    .hook code {
-        font-size: 25px;
-        display: block;
-    }
-        .hook code input {
-            font-size: 20px;
-        }
 
+/* styles for the language boxes */
 .bubbles {
     text-align: center; /* centers the middle bubble */
     margin-bottom: 50px;
@@ -152,14 +150,12 @@ a {
             border-color: #3498db;
         }
 
+/* styles for the time/place info at the bottom of the page */
 .info {
     padding-bottom: 50px;
 }
     .info > h1 {
         font-size: 40px;
-    }
-    .info > h3 {
-        font-size: 25px;
     }
 
 
