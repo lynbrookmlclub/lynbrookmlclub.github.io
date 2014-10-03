@@ -70,6 +70,7 @@ a {
     color: #fff;
     text-align: center;
     overflow-y: hidden; /* hides the lower box shadow on the brackets screenshot */
+    height:600px;
 }
     #welcome-row .title {
         font-size: 40px;
