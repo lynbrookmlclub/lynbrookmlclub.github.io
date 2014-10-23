@@ -261,6 +261,15 @@ a {
     #hero-image-row {
         background-position: 0 0;
     }
+    #phone {
+        position: relative;
+        left: 0px;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    #mock {
+        display:none;
+    }
 }
 
 @media all and (max-width:700px) {
@@ -286,13 +295,4 @@ a {
             margin: 0 auto;
             margin-top: 50px;
         }
-    #phone {
-        position: relative;
-        left: 0px;
-        margin-top: 50px;
-        margin-left: 0px;
-    }
-    #mock {
-        display:none;
-    }
 }
