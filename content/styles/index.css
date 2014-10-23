@@ -150,6 +150,37 @@ a {
             border-color: #3498db;
         }
 
+#workshop {
+    background: url('http://www.thewallpapers.org/photo/26391/gray-patterns.jpg');
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#hackathon {
+    background: url('http://www.whitewallpaper.org/backgrounds/white-blanket-647343.jpeg');
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.event h1 {
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding-bottom: 50px;
+    width: 300px;
+    left: 50%;
+    position: relative;
+    margin-left: -150px;
+}
+.event p {
+    margin-top: 50px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    margin-left: -25%;
+    font-size: 18px;
+    line-height: 35px;
+}
+
 /* styles for the time/place info at the bottom of the page */
 .info {
     padding-bottom: 50px;
