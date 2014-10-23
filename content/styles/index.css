@@ -150,6 +150,33 @@ a {
             border-color: #3498db;
         }
 
+/* styles for the workshops/hackathon row */
+.city {
+    background: url('content/images/cityscape.jpg');
+    background-size: cover;
+    padding-top: 50px;
+    height: 246px;
+}
+.side-panel {
+    width: 50%;
+}
+#left-panel {
+    float: left;
+}
+#right-panel {
+    float: left;
+}
+.side-panel h1 {
+    font-weight: bold;
+}
+.side-panel p {
+    width: 500px;
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+    line-height: 25px;
+}
+
 /* styles for the time/place info at the bottom of the page */
 .info {
     padding-bottom: 50px;
