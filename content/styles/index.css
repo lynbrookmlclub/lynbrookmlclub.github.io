@@ -61,8 +61,8 @@ a {
         }
     .inverted {
         color: #fff;
-        border: 1px solid #e74b3c;
         background-color: #e74b3c;
+        border: 1px solid white
     }
         .inverted:hover {
             background-color: #fff;
@@ -157,14 +157,19 @@ a {
     padding-bottom: 50px;
 }
 #hackathon {
-    background: url('http://www.whitewallpaper.org/backgrounds/white-blanket-647343.jpeg');
+    background: white;
     color: black;
     padding-top: 50px;
     padding-bottom: 50px;
 }
+#hackathon h1 {
+    border-bottom: 1px solid black;
+}
+#workshop h1 {
+    border-bottom: 1px solid white;
+}
 .event h1 {
     text-transform: uppercase;
-    border-bottom: 1px solid white;
     padding-bottom: 50px;
     width: 300px;
     left: 50%;
