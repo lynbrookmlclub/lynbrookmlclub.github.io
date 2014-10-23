@@ -158,6 +158,16 @@ a {
         font-size: 40px;
     }
 
+@media all and (min-width:700px) {
+    #css-bubble {
+        position: absolute;
+        left: 37.5%;
+    }
+    #lang-bubbles {
+        height: 336px;
+    }
+}
+
 
 @media all and (max-width:1100px) {
     #hero-image-row {
