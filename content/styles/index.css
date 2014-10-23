@@ -196,7 +196,7 @@ a {
 #mock {
     position: absolute;
     left: 100%;
-    width: 100px;
+    width: 300px;
     margin-left: -330px;
     margin-top:80px;
     -moz-transform: scaleX(-1);
@@ -223,6 +223,16 @@ a {
     #lang-bubbles {
         height: 336px;
     }
+}
+
+@media all and (max-width:1200px) {
+    #phone, #mock {
+        width: 200px;
+    }
+    #mock {
+        margin-left:-230px;
+    }
+    /* keeps images out of the way of the text for hackathons */
 }
 
 
@@ -276,4 +286,13 @@ a {
             margin: 0 auto;
             margin-top: 50px;
         }
+    #phone {
+        position: relative;
+        left: 0px;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    #mock {
+        display:none;
+    }
 }
