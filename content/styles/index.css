@@ -150,10 +150,6 @@ a {
             border-color: #3498db;
         }
 
-.dots {
-    position:absolute;z-index:1;top:0;left:0;
-}
-
 /* styles for the time/place info at the bottom of the page */
 .info {
     padding-bottom: 50px;
