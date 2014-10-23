@@ -150,24 +150,7 @@ a {
             border-color: #3498db;
         }
 
-#workshop {
-    background: url('http://www.thewallpapers.org/photo/26391/gray-patterns.jpg');
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-#hackathon {
-    background: white;
-    color: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-#hackathon h1 {
-    border-bottom: 1px solid black;
-}
-#workshop h1 {
-    border-bottom: 1px solid white;
-}
+/* styles for workshop/hackathon segment of home page */
 .event h1 {
     text-transform: uppercase;
     padding-bottom: 50px;
@@ -184,6 +167,44 @@ a {
     margin-left: -25%;
     font-size: 18px;
     line-height: 35px;
+}
+    #workshop {
+        background: url('http://www.thewallpapers.org/photo/26391/gray-patterns.jpg');
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #hackathon {
+        background: white;
+        color: black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+        #hackathon h1 {
+            border-bottom: 1px solid black;
+        }
+        #workshop h1 {
+            border-bottom: 1px solid white;
+        }
+#phone {
+    position: absolute;
+    left: 0px;
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 300px;
+}
+#mock {
+    position: absolute;
+    left: 100%;
+    width: 100px;
+    margin-left: -330px;
+    margin-top:80px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 /* styles for the time/place info at the bottom of the page */
