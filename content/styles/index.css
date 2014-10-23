@@ -152,7 +152,7 @@ a {
 
 /* styles for the workshops/hackathon row */
 .city {
-    background: url('content/images/cityscape.jpg');
+    background: url('../images/cityscape.jpg');
     background-size: cover;
     padding-top: 50px;
     height: 246px;
