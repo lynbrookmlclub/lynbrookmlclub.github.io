@@ -281,10 +281,12 @@ a {
 
     .bubbles {
         margin-top: 0;
+        margin-bottom: 100%;
     }
         .bubbles .bubble, /* I...I can't even.... this is why I use IE. Thanks a gazillion to Christina NOT :( ; https://stackoverflow.com/questions/26540998/chrome-not-re-applying-floats-after-media-queries/26541254#26541254 */
         .bubbles #html-bubble,
         .bubbles #css-bubble {
+            float: clear;
             float: none;
             display: block;
             width: 70%;
