@@ -281,16 +281,32 @@ a {
 
     .bubbles {
         margin-top: 0;
-        margin-bottom: 100%;
+        position: relative;
+        height: 1000px;
     }
-        .bubbles .bubble, /* I...I can't even.... this is why I use IE. Thanks a gazillion to Christina NOT :( ; https://stackoverflow.com/questions/26540998/chrome-not-re-applying-floats-after-media-queries/26541254#26541254 */
+        /*
+            I know what you're thinking - what is all of this crappy code just to center some divs?!?
+            You dummy, just float:none all of them and margin: 0 auto!
+            WELL IT'S NOT THAT EASY -.- Chrome is kind of mean about floats.
+            https://stackoverflow.com/questions/26540998/chrome-not-re-applying-floats-after-media-queries
+        */
+        .bubbles .bubble,
         .bubbles #html-bubble,
         .bubbles #css-bubble {
-            float: clear;
-            float: none;
-            display: block;
+            position: absolute;
+            margin: 0;
             width: 70%;
-            margin: 0 auto;
-            margin-top: 50px;
+            left: 15%;
+            margin-left: -10px;
+            display: block;
+        }
+        .bubbles #html-bubble {
+            margin-top: 0;
+        }
+        .bubbles #js-bubble {
+            margin-top: 360px;
+        }
+        .bubbles #css-bubble {
+            margin-top: 720px;
         }
 }
