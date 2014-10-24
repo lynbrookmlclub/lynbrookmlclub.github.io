@@ -209,6 +209,11 @@ a {
     -ms-filter: "FlipH";
 }
 
+.footer h3 {
+    width: 75%;
+    line-height: 35px;
+}
+
 /* styles for the time/place info at the bottom of the page */
 .info {
     padding-bottom: 50px;
