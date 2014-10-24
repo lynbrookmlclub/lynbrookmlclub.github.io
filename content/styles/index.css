@@ -222,16 +222,6 @@ a {
         font-size: 40px;
     }
 
-@media all and (min-width:700px) {
-    #css-bubble {
-        position: absolute;
-        left: 37.5%;
-    }
-    #lang-bubbles {
-        height: 336px;
-    }
-}
-
 @media all and (max-width:1200px) {
     #phone, #mock {
         width: 200px;
@@ -292,10 +282,9 @@ a {
     .bubbles {
         margin-top: 0;
     }
-
+        .bubbles .bubble, /* I...I can't even.... this is why I use IE. Thanks a gazillion to Christina :D https://stackoverflow.com/questions/26540998/chrome-not-re-applying-floats-after-media-queries/26541254#26541254 */
         .bubbles #html-bubble,
-        .bubbles #css-bubble,
-        .bubbles #js-bubble {
+        .bubbles #css-bubble {
             float: none;
             display: block;
             width: 70%;
