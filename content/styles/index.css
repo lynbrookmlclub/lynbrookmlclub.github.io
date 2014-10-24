@@ -303,10 +303,10 @@ a {
         .bubbles #html-bubble {
             margin-top: 0;
         }
-        .bubbles #js-bubble {
+        .bubbles #css-bubble {
             margin-top: 360px;
         }
-        .bubbles #css-bubble {
+        .bubbles #js-bubble {
             margin-top: 720px;
         }
 }
