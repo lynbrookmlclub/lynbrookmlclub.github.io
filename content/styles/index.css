@@ -169,7 +169,7 @@ a {
     line-height: 35px;
 }
     #workshop {
-        background: url('http://www.thewallpapers.org/photo/26391/gray-patterns.jpg');
+        background: url('../images/graypattern.jpg'); /* Thanks! http://www.thewallpapers.org/download/26391/gray-patterns-wallpaper */
         color: white;
         padding-top: 50px;
         padding-bottom: 50px;
