@@ -106,8 +106,10 @@
                 //Change all the colors in the page for the color manipulation
 
                 var color = colorInput.value;
+                if(color == "white" || "#fff" || "#ffffff" || "rbg(255,255,255)") {
+                    return;
+                }
                 var css = ".standard, .inverted:hover {background-color: #fff;color: "+color+";}.standard:hover, .inverted {background-color: "+color+";color: #fff;}#welcome-row, .info.row.footer {background-color: "+color+"; color: #fff;}";
-
                 var styleTag = document.getElementById("colorChange");
                 if(styleTag) {
                     styleTag.childNodes[0].nodeValue = css;
