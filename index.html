@@ -3,9 +3,11 @@
     <head>
         <title>LHS Web Dev</title>
         <link href="content/styles/index.css" rel="stylesheet" />
+
+        <style type="text/css" id="color-changer"></style>
     </head>
     <body>
-        <div class="row" id="welcome-row">
+        <div class="row" id="header">
             <h1 class="title">Lynbrook Web Dev</h1>
             <h2 class="subtitle">LEARN, CREATE, AND PLAY</h2>
 
@@ -19,7 +21,7 @@
                 Scroll down for more
             </h3>
 
-            <br/>
+            <br />
 
             <img src="content/images/codebrowser-cropped.png" alt="web dev" id="brackets-screenshot" />
         </div>
@@ -85,7 +87,7 @@
             </div>
         </div>
 
-        <div class="info row footer">
+        <div class="info row footer" id="footer">
             <h3>If we get passed, meetings start second semester.</h3>
             <h3>Come join us.</h3>
             <br/><br/>
@@ -101,22 +103,11 @@
                 //so that we don't need to check against a list of every
                 //possible color
 
-                //welcomeRow.style.backgroundColor = colorInput.value; Fall Back if my DOM Manipulation fails
-
-                //Change all the colors in the page for the color manipulation
-
                 var color = colorInput.value;
-                var css = ".standard, .inverted:hover {background-color: #fff;color: "+color+";}.standard:hover, .inverted {background-color: "+color+";color: #fff;}#welcome-row, .info.row.footer {background-color: "+color+"; color: #fff;}";
-                var styleTag = document.getElementById("colorChange");
-                if(styleTag) {
-                    styleTag.innerHTML = css;
-                }
-                else {
-                    var style = document.createElement("style");
-                    style.id = "colorChange";
-                    style.appendChild(document.createTextNode(css));
-                    document.head.appendChild(style);
-                }
+                var css = ".standard { background-color: #fff; color: " + color + "; }";
+                css += ".standard:hover, #header, #footer { background-color: " + color + "; color: #fff; }";
+
+                document.getElementById("color-changer").innerHTML = css;
             };
         </script>
     </body>

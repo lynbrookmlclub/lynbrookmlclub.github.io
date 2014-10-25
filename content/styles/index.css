@@ -61,23 +61,23 @@ a {
         }
 
 /* styles for the big orange welcome row at the top */
-#welcome-row {
+#header {
     background-color: #e74b3c;
     color: #fff;
     text-align: center;
     overflow-y: hidden; /* hides the lower box shadow on the brackets screenshot */
     height:600px;
 }
-    #welcome-row .title {
+    #header .title {
         font-size: 40px;
         padding-top: 40px;
     }
-    #welcome-row .subtitle {
+    #header .subtitle {
         font-size: 20px;
         margin-top: 10px;
         font-weight: 400;
     }
-    #welcome-row h3 {
+    #header h3 {
         width:50%;
     }
 
