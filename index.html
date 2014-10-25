@@ -91,7 +91,7 @@
         </footer>
 
         <script type="text/javascript">
-
+            var brightColors = [ "white", "yellow" ];
             var colorInput = document.getElementById("hook-color");
 
             colorInput.onkeyup = function () {
@@ -100,8 +100,10 @@
                 //possible color
 
                 var color = colorInput.value;
-                var css = ".standard { background-color: #fff; color: " + color + "; }";
-                css += ".standard:hover, #welcome, #goodbye { background-color: " + color + "; color: #fff; }";
+                var contrastingColor = brightColors.indexOf(color.toLowerCase()) === -1 ? "#fff" : "#000";
+
+                var css = ".standard { background-color: " + contrastingColor + "; color: " + color + "; }";
+                css += ".standard:hover, #welcome, #goodbye { background-color: " + color + "; color: " + contrastingColor + "; }";
 
                 document.getElementById("color-changer").innerHTML = css;
             };
