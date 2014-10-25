@@ -1,83 +1,21 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800);
-
-html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: #2c3e50;
-    text-align: center;
-    font-family: 'Lato';
-}
-
-/* default stylings */
-h1, h2, h3 {
-    font-weight: 300;
-    text-align: center;
-    margin: 0;
-}
-
-h3, code, button {
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 25px;
-}
-
-h3 {
-    width: 50%;
-}
-
-.row {
-    position: relative;
-    width: 100%;
-    margin: 0;
-}
-
-a {
-    color: currentColor;
-}
-
-.button {
-    width: 150px;
-    height: 55px;
-    line-height: 55px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    text-decoration: none;
-}
-    .standard {
-        background-color: #fff;
-        color: #e74b3c;
-        border: 1px solid #fff;
-    }
-        .standard:hover {
-            background-color: #e74b3c;
-            color: #fff;
-        }
-
-/* styles for the big orange welcome row at the top */
-#header {
+﻿/* styles for the big orange welcome row at the top */
+#welcome {
     background-color: #e74b3c;
     color: #fff;
     text-align: center;
     overflow-y: hidden; /* hides the lower box shadow on the brackets screenshot */
     height:600px;
 }
-    #header .title {
+    #welcome > h1 {
         font-size: 40px;
         padding-top: 40px;
     }
-    #header .subtitle {
+    #welcome > h2 {
         font-size: 20px;
         margin-top: 10px;
         font-weight: 400;
     }
-    #header h3 {
+    #welcome > h3 {
         width:50%;
     }
 
@@ -87,6 +25,7 @@ a {
         overflow-y: hidden;
         display: block; /* Thanks! http://www.htmlforums.com/css/t-margin-under-image-in-ie-73651.html */
         margin: 0 auto;
+        margin-top: 50px;
     }
 
 /* styles for the "hook", that lets the user play around with CSS styles */
