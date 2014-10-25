@@ -84,64 +84,48 @@
         }
 
 /* styles for workshop/hackathon segment of home page */
-.event h1 {
-    text-transform: uppercase;
+#workshop {
+    background: url('../images/graypattern.jpg'); /* Thanks! http://www.thewallpapers.org/download/26391/gray-patterns-wallpaper */
+    color: white;
+    padding-top: 50px;
     padding-bottom: 50px;
-    width: 300px;
-    left: 50%;
+    background-size:cover;
+    background-attachment: fixed;
+}
+#hackathon {
+    background: white;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
-    margin-left: -150px;
 }
-.event p {
-    margin-top: 50px;
-    width: 50%;
-    position: relative;
-    left: 50%;
-    margin-left: -25%;
-    font-size: 18px;
-    line-height: 35px;
-}
-    #workshop {
-        background: url('../images/graypattern.jpg'); /* Thanks! http://www.thewallpapers.org/download/26391/gray-patterns-wallpaper */
-        color: white;
-        padding-top: 50px;
+    .event h1 {
+        width: 300px;
         padding-bottom: 50px;
-        background-size:cover;
-        background-attachment: fixed;
+        margin: 0 auto;
+        border-bottom: 1px solid currentColor;
     }
-    #hackathon {
-        background: white;
-        color: black;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-        #hackathon h1 {
-            border-bottom: 1px solid black;
-        }
-        #workshop h1 {
-            border-bottom: 1px solid white;
-        }
-#phone {
-    position: absolute;
-    left: 0px;
-    margin-top: 80px;
-    margin-left: 30px;
-    width: 300px;
-}
-#mock {
-    position: absolute;
-    left: 100%;
-    width: 300px;
-    margin-left: -330px;
-    margin-top:80px;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}
 
+    .event p {
+        font-size: 18px;
+        line-height: 35px;
+    
+        width: 50%;
+
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+#hackathon > img {
+    width: 300px;
+    position: absolute;
+    top: 80px;
+}
+    #phone { left: 30px; }
+    #mock { right: 30px; }
+
+
+/* These are styles for the footer. */
 #goodbye {
     padding-top: 50px;
     background-color: #e74b3c; 
