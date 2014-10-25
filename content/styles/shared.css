@@ -36,16 +36,13 @@ a {
 
 .button {
     width: 150px;
-    height: 55px;
     line-height: 55px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: none;
-    cursor: pointer;
+
     font-size: 20px;
     text-decoration: none;
+
+    display: block;
+    margin: 0 auto;
 }
     .standard {
         background-color: #fff;
