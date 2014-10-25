@@ -27,7 +27,7 @@
         <div class="info row">
             <div class="hook">
                 <h3>
-                    Think you can't do it? Try changing the background color of the header.
+                    Think you can't do it? Try changing the accent color of the header.
                 </h3>
 
                 <code>
@@ -85,7 +85,7 @@
             </div>
         </div>
 
-        <div class="info row footer" style="padding-top: 50px; background: #e74b3c; color: white;">
+        <div class="info row footer">
             <h3>If we get passed, meetings start second semester.</h3>
             <h3>Come join us.</h3>
             <br/><br/>
@@ -95,13 +95,29 @@
         <script type="text/javascript">
 
             var colorInput = document.getElementById("hook-color");
-            var welcomeRow = document.getElementById("welcome-row");
 
             colorInput.onkeyup = function () {
                 //we're gonna rely on the browser ignoring incorrect colors
                 //so that we don't need to check against a list of every
                 //possible color
-                welcomeRow.style.backgroundColor = colorInput.value;
+
+                //welcomeRow.style.backgroundColor = colorInput.value; Fall Back if my DOM Manipulation fails
+
+                //Change all the colors in the page for the color manipulation
+
+                var color = colorInput.value;
+                var css = ".standard, .inverted:hover {background-color: #fff;color: "+color+";}.standard:hover, .inverted {background-color: "+color+";color: #fff;}#welcome-row, .info.row.footer {background-color: "+color+"; color: #fff;}";
+
+                var styleTag = document.getElementById("colorChange");
+                if(styleTag) {
+                    styleTag.innerHTML = css;
+                }
+                else {
+                    var style = document.createElement("style");
+                    style.id = "colorChange";
+                    style.appendChild(document.createTextNode(css));
+                    document.head.appendChild(style);
+                }
             };
         </script>
     </body>

@@ -222,6 +222,14 @@ a {
         font-size: 40px;
     }
 
+
+.info.row.footer {
+    padding-top: 50px;
+    background-color: #e74b3c; 
+    color: white;
+}
+
+/* media queries */
 @media all and (max-width:1200px) {
     #phone, #mock {
         width: 200px;
