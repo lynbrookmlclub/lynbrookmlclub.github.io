@@ -2,38 +2,31 @@
 <html>
     <head>
         <title>LHS Web Dev</title>
+        <link href="content/styles/shared.css" rel="stylesheet" />
         <link href="content/styles/index.css" rel="stylesheet" />
 
         <style type="text/css" id="color-changer"></style>
     </head>
     <body>
-        <div class="row" id="header">
-            <h1 class="title">Lynbrook Web Dev</h1>
-            <h2 class="subtitle">LEARN, CREATE, AND PLAY</h2>
+        <header class="row" id="welcome">
+            <h1>Lynbrook Web Dev</h1>
+            <h2>LEARN, CREATE, AND PLAY</h2>
 
-            <h3>
-                In the Web Dev club, we'll teach you everything you need to know to get up and running with web development.
-            </h3>
+            <h3>In the Web Dev club, we'll teach you everything you need to know to get up and running with web development.</h3>
 
-            <a target="_blank" class="standard sign-up button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
+            <a target="_blank" class="standard button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
 
-            <h3>
-                Scroll down for more
-            </h3>
-
-            <br />
+            <h3>Scroll down for more</h3>
 
             <img src="content/images/codebrowser-cropped.png" alt="web dev" id="brackets-screenshot" />
-        </div>
+        </header>
 
         <div class="info row">
             <div class="hook">
-                <h3>
-                    Think you can't do it? Try changing the accent color of the header.
-                </h3>
+                <h3>Think you can't do it? Try changing the accent color of the header.</h3>
 
                 <code>
-                    #header, #footer { background-color: <input type="text" placeholder="orange" id="hook-color" /> }
+                    header, footer { background-color: <input type="text" placeholder="orange" id="hook-color" /> }
                 </code>
 
                 <h3>
@@ -105,7 +98,7 @@
 
                 var color = colorInput.value;
                 var css = ".standard { background-color: #fff; color: " + color + "; }";
-                css += ".standard:hover, #header, #footer { background-color: " + color + "; color: #fff; }";
+                css += ".standard:hover, #welcome, #footer { background-color: " + color + "; color: #fff; }";
 
                 document.getElementById("color-changer").innerHTML = css;
             };
