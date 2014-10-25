@@ -59,15 +59,6 @@ a {
             background-color: #e74b3c;
             color: #fff;
         }
-    .inverted {
-        color: #fff;
-        background-color: #e74b3c;
-        border: 1px solid white
-    }
-        .inverted:hover {
-            background-color: #fff;
-            color: #e74b3c;
-        }
 
 /* styles for the big orange welcome row at the top */
 #welcome-row {
