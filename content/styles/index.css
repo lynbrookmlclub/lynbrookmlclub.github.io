@@ -1,9 +1,9 @@
-﻿/* styles for the big orange welcome row at the top */
+﻿/* These are styles for the big welcome row at the top. */
 #welcome {
     background-color: #e74b3c;
     color: #fff;
     text-align: center;
-    overflow-y: hidden; /* hides the lower box shadow on the brackets screenshot */
+    overflow-y: hidden; /* This hides the lower box shadow on the brackets screenshot so it doesn't go past the orange. */
     height:600px;
 }
     #welcome > h1 {
@@ -28,7 +28,7 @@
         margin-top: 50px;
     }
 
-/* styles for the "hook", that lets the user play around with CSS styles */
+/* These are styles for the "hook", that lets the user play around with CSS styles. */
 .hook code {
     font-size: 25px;
     display: block;
@@ -37,14 +37,14 @@
         font-size: 20px;
     }
 
-/* styles for the language boxes */
-#lang-bubbles {
-    text-align: center; /* centers the middle bubble */
+/* These are styles for the language boxes. */
+#lang-boxes {
+    text-align: center; /* This centers the middle box (the other two are floated). */
     margin-bottom: 50px;
     margin-top: 50px;
     color: #2c3e50;
 }
-    #lang-bubbles > article {
+    #lang-boxes > article {
         width: 25%;
         background-color: #f4f4f4;
         height: 300px;
@@ -53,60 +53,49 @@
         border: 1px solid;
         border-top-width:15px;
     }
-        /* This positions the bubbles. */
-        #lang-bubbles #html-bubble {
+        /* These position the boxes. */
+        #lang-boxes #html-box {
             float: left;
             margin-left: 50px;
             border-color: #2ecc71;
         }
-        #lang-bubbles #css-bubble {
-            display: inline-block; /* this is basically a replacement for float:center, it'll cause it to position based on the text-align:center in #lang-bubbles */
+        #lang-boxes #css-box {
+            /* This is basically a replacement for float:center; it'll cause it to position based on the text-align:center in #lang-boxes. */
+            display: inline-block;
             border-color: #8e44ad;
         }
-        #lang-bubbles #js-bubble {
+        #lang-boxes #js-box {
             float: right;
             margin-right: 50px;
             border-color: #3498db;
         }
 
-        /* This styles the inside of the bubbles. */
-        #lang-bubbles > article > h1 {
+        /* This styles the inside of the boxes. */
+        #lang-boxes > article > h1 {
             font-weight: 600;
             margin-top: 25px;
         }
-        #lang-bubbles > article > img {
+        #lang-boxes > article > img {
             width: 75px;
             margin-top: 15px;
             margin-bottom: 15px;
         }
-        #lang-bubbles > article > p {
+        #lang-boxes > article > p {
             font-size: 20px;
         }
 
-/* styles for workshop/hackathon segment of home page */
-#workshop {
-    background: url('../images/graypattern.jpg'); /* Thanks! http://www.thewallpapers.org/download/26391/gray-patterns-wallpaper */
-    color: white;
+/* These are styles for the events section. */
+.event {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-size:cover;
-    background-attachment: fixed;
 }
-#hackathon {
-    background: white;
-    color: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    position: relative;
-}
-    .event h1 {
+    .event > h1 {
         width: 300px;
         padding-bottom: 50px;
         margin: 0 auto;
         border-bottom: 1px solid currentColor;
     }
-
-    .event p {
+    .event > p {
         font-size: 18px;
         line-height: 35px;
     
@@ -116,13 +105,26 @@
         margin-top: 50px;
     }
 
-#hackathon > img {
-    width: 300px;
-    position: absolute;
-    top: 80px;
+#workshop {
+    color: white;
+
+    background: url('../images/graypattern.jpg'); /* Thanks! http://www.thewallpapers.org/download/26391/gray-patterns-wallpaper */
+    background-size:cover;
+    background-attachment: fixed;
 }
-    #phone { left: 30px; }
-    #mock { right: 30px; }
+#hackathon {
+    color: black;
+    
+    background: white;
+    position: relative;
+}
+    #hackathon > img {
+        width: 300px;
+        position: absolute;
+        top: 80px;
+    }
+        #phone { left: 30px; }
+        #mock { right: 30px; }
 
 
 /* These are styles for the footer. */
@@ -139,33 +141,32 @@
         margin-top: 100px;
     }
 
-/* media queries */
+/* Assorted media queries that change the page depending on it's size. */
 @media all and (max-width:1200px) {
-    #phone, #mock {
+    /* This keeps the images out of the way of the text for hackathons */
+    #hackathon > img {
         width: 200px;
     }
-    #mock {
-        margin-left:-230px;
-    }
-    /* keeps images out of the way of the text for hackathons */
 }
 
 @media all and (max-width:890px) {
-    #lang-bubbles > article > p {
+    #lang-boxes > article > p {
         font-size: 18px;
     }
 }
 
 @media all and (max-width:770px) {
-    #phone {
-        position: relative;
-        left: 0px;
+    .event > p {
+        width: 80%;
+    }
+
+    /* Hides the mock image and centers the phone image. */
+    #hackathon > img {
+        position: static;
+        width: 40%;
         margin-top: 50px;
-        margin-left: 0px;
     }
-    #mock {
-        display:none;
-    }
+        #mock { display:none; }
 }
 
 @media all and (max-width:700px) {
@@ -178,7 +179,7 @@
         width: 90%;
     }
 
-    #lang-bubbles {
+    #lang-boxes {
         margin-top: 0;
         position: relative;
         height: 1100px;
@@ -189,9 +190,9 @@
             WELL IT'S NOT THAT EASY -.- Chrome is kind of mean about floats.
             https://stackoverflow.com/questions/26540998/chrome-not-re-applying-floats-after-media-queries
         */
-        #lang-bubbles #html-bubble,
-        #lang-bubbles #css-bubble,
-        #lang-bubbles #js-bubble {
+        #lang-boxes #html-box,
+        #lang-boxes #css-box,
+        #lang-boxes #js-box {
             position: absolute;
             margin: 0;
             width: 70%;
@@ -200,7 +201,7 @@
             display: block;
         }
 
-        #lang-bubbles #html-bubble { margin-top: 0; }
-        #lang-bubbles #css-bubble { margin-top: 360px; }
-        #lang-bubbles #js-bubble { margin-top: 720px; }
+        #lang-boxes #html-box { margin-top: 0; }
+        #lang-boxes #css-box { margin-top: 360px; }
+        #lang-boxes #js-box { margin-top: 720px; }
 }
