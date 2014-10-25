@@ -8,7 +8,7 @@
         <style type="text/css" id="color-changer"></style>
     </head>
     <body>
-        <header class="row" id="welcome">
+        <header id="welcome">
             <h1>Lynbrook Web Dev</h1>
             <h2>LEARN, CREATE, AND PLAY</h2>
 
@@ -21,8 +21,8 @@
             <img src="content/images/codebrowser-cropped.png" alt="web dev" id="brackets-screenshot" />
         </header>
 
-        <div class="info row">
-            <div class="hook">
+        <section>
+            <aside class="hook">
                 <h3>Think you can't do it? Try changing the accent color of the header.</h3>
 
                 <code>
@@ -32,60 +32,63 @@
                 <h3>
                     Hooked? <a target="_blank" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">Sign up</a> for the Web Dev club to learn even more!
                 </h3>
-            </div>
+            </aside>
 
-            <div class="bubbles" id="lang-bubbles">
-                <div class="bubble" id="html-bubble">
+            <section id="lang-bubbles">
+                <article id="html-bubble">
                     <h1>HTML</h1>
                     <img src="content/images/html-icon.png" alt="html" />
+
                     <p>
                         HTML is the meat of a web page - it describes the content and general layout of a page.
                     </p>
-                </div>
+                </article>
 
-                <div class="bubble" id="css-bubble">
+                <article id="css-bubble">
                     <h1>CSS</h1>
-                    <img src="content/images/css-icon.png" alt="css" />
+                    <img src="content/images/css-icon.png" alt="css"/>
+
                     <p>
                         CSS makes sites pretty - it describes the presentation and design of the underlying HTML.
                     </p>
-                </div>
+                </article>
 
-                <div class="bubble" id="js-bubble">
+                <article id="js-bubble">
                     <h1>Javascript</h1>
-                    <img src="content/images/js-icon.png" alt="javascript" />
+                    <img src="content/images/js-icon.png" alt="javascript"/>
+
                     <p>
                         Javascript is responsible for making things happen - it makes your website as interactive as you want.
                     </p>
-                </div>
-            </div>
+                </article>
+            </section>
+        </section>
 
-            <!--<h3>We'll also get into more interesting things, like <span class="important">PHP</span>, <span class="important">ASP.NET</span>, and <span class="important">Angular.js</span>.</h3>-->
-        </div>
-
-        <div class="info row" style="padding-bottom: 0px;">
+        <section style="padding-bottom: 0;">
             <div class="event" id="workshop">
                 <h1>Workshops</h1>
                 <p>
                     We hold weekly workshops for both beginners and veteran coders. Interested members with no prior experience have the opportunity to learn the basics of website development (HTML, CSS, and Javascript) through our weekly lessons and projects. Coders with more experience get to engage in more advanced workshops, which explore a number of topics including, but not limited to, PHP, AJAX, CSS3, and jQuery.
                 </p>
             </div>
+
             <img src="content/images/flatphone.png" id="phone" alt="Phone"> <!-- From: http://demo.bestdnnskins.com/portals/5/banner2_mobile1.png -->
             <img src="content/images/mock.png" id="mock" alt="Website"> <!-- From: http://wopethemes.com/demo/lorencia/wp-content/uploads/2013/10/mock3.png -->
+
             <div class="event" id="hackathon">
                 <h1>Hackathons</h1>
                 <p>
                     Once every few months, members will have the opportunity to participate in hackathons hosted by our club. In these hackathons, members can form teams and apply knowledge that they have learned through the workshops to make a live project. These hackathons not only provide an opportunity to apply skills and work collaboratively, but also involve the thrill of competition as well as feedback from experienced developers.
                 </p>
             </div>
-        </div>
+        </section>
 
-        <div class="info row footer" id="footer">
+        <footer id="goodbye">
             <h3>If we get passed, meetings start second semester.</h3>
             <h3>Come join us.</h3>
-            <br/><br/>
-            <a target="_blank" class="standard sign-up button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
-        </div>
+
+            <a target="_blank" class="standard button" href="https://docs.google.com/forms/d/12c_cmVw4ZquRgUidaIaOjUXvBN7ioD7W4NXV3JwuBEc/viewform">&lt; SIGN UP &gt;</a>
+        </footer>
 
         <script type="text/javascript">
 
@@ -98,7 +101,7 @@
 
                 var color = colorInput.value;
                 var css = ".standard { background-color: #fff; color: " + color + "; }";
-                css += ".standard:hover, #welcome, #footer { background-color: " + color + "; color: #fff; }";
+                css += ".standard:hover, #welcome, #goodbye { background-color: " + color + "; color: #fff; }";
 
                 document.getElementById("color-changer").innerHTML = css;
             };

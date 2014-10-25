@@ -38,13 +38,13 @@
     }
 
 /* styles for the language boxes */
-.bubbles {
+#lang-bubbles {
     text-align: center; /* centers the middle bubble */
     margin-bottom: 50px;
     margin-top: 50px;
     color: #2c3e50;
 }
-    .bubbles .bubble {
+    #lang-bubbles > article {
         width: 25%;
         background-color: #f4f4f4;
         height: 300px;
@@ -53,31 +53,34 @@
         border: 1px solid;
         border-top-width:15px;
     }
-        .bubbles .bubble h1 {
-            font-weight: 600;
-            margin-top: 25px;
-        }
-        .bubbles .bubble img {
-            width: 75px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        .bubbles .bubble p {
-            font-size: 20px;
-        }
-        .bubbles #html-bubble {
+        /* This positions the bubbles. */
+        #lang-bubbles #html-bubble {
             float: left;
             margin-left: 50px;
             border-color: #2ecc71;
         }
-        .bubbles #css-bubble {
-            display: inline-block; /* this is basically a replacement for float:center, it'll cause it to position based on the text-align:center in .bubbles */
+        #lang-bubbles #css-bubble {
+            display: inline-block; /* this is basically a replacement for float:center, it'll cause it to position based on the text-align:center in #lang-bubbles */
             border-color: #8e44ad;
         }
-        .bubbles #js-bubble {
+        #lang-bubbles #js-bubble {
             float: right;
             margin-right: 50px;
             border-color: #3498db;
+        }
+
+        /* This styles the inside of the bubbles. */
+        #lang-bubbles > article > h1 {
+            font-weight: 600;
+            margin-top: 25px;
+        }
+        #lang-bubbles > article > img {
+            width: 75px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        #lang-bubbles > article > p {
+            font-size: 20px;
         }
 
 /* styles for workshop/hackathon segment of home page */
@@ -139,25 +142,18 @@
     -ms-filter: "FlipH";
 }
 
-.footer h3 {
-    width: 75%;
-    line-height: 35px;
-}
-
-/* styles for the time/place info at the bottom of the page */
-.info {
-    padding-bottom: 50px;
-}
-    .info > h1 {
-        font-size: 40px;
-    }
-
-
-.info.row.footer {
+#goodbye {
     padding-top: 50px;
     background-color: #e74b3c; 
     color: white;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
 }
+    #goodbye > .button {
+        margin-top: 100px;
+    }
 
 /* media queries */
 @media all and (max-width:1200px) {
@@ -170,32 +166,13 @@
     /* keeps images out of the way of the text for hackathons */
 }
 
-
-@media all and (max-width:1100px) {
-    #hero-image-row {
-        /* keeps the background image from repeating */
-        background-position: 0 -100px;
-    }
-}
-
 @media all and (max-width:890px) {
-    #hero-image-row {
-        background-position: 0 -50px;
-    }
-
-    .bubbles .bubble p {
+    #lang-bubbles > article > p {
         font-size: 18px;
-    }
-
-    .info > h3 {
-        font-size: 20px;
     }
 }
 
 @media all and (max-width:770px) {
-    #hero-image-row {
-        background-position: 0 0;
-    }
     #phone {
         position: relative;
         left: 0px;
@@ -208,19 +185,19 @@
 }
 
 @media all and (max-width:700px) {
-    #welcome-row h3 {
+    #welcome h3 {
         font-size: 20px;
         width: 90%;
     }
 
-    #welcome-row #brackets-screenshot {
+    #welcome #brackets-screenshot {
         width: 90%;
     }
 
-    .bubbles {
+    #lang-bubbles {
         margin-top: 0;
         position: relative;
-        height: 1000px;
+        height: 1100px;
     }
         /*
             I know what you're thinking - what is all of this crappy code just to center some divs?!?
@@ -228,9 +205,9 @@
             WELL IT'S NOT THAT EASY -.- Chrome is kind of mean about floats.
             https://stackoverflow.com/questions/26540998/chrome-not-re-applying-floats-after-media-queries
         */
-        .bubbles .bubble,
-        .bubbles #html-bubble,
-        .bubbles #css-bubble {
+        #lang-bubbles #html-bubble,
+        #lang-bubbles #css-bubble,
+        #lang-bubbles #js-bubble {
             position: absolute;
             margin: 0;
             width: 70%;
@@ -238,13 +215,8 @@
             margin-left: -10px;
             display: block;
         }
-        .bubbles #html-bubble {
-            margin-top: 0;
-        }
-        .bubbles #css-bubble {
-            margin-top: 360px;
-        }
-        .bubbles #js-bubble {
-            margin-top: 720px;
-        }
+
+        #lang-bubbles #html-bubble { margin-top: 0; }
+        #lang-bubbles #css-bubble { margin-top: 360px; }
+        #lang-bubbles #js-bubble { margin-top: 720px; }
 }
