@@ -110,7 +110,7 @@
 
                 var styleTag = document.getElementById("colorChange");
                 if(styleTag) {
-                    styleTag.innerHTML = css;
+                    styleTag.childNodes[0].nodeValue = css;
                 }
                 else {
                     var style = document.createElement("style");
