@@ -20,7 +20,7 @@
         </section>
         <section id="content-container">
             <!-- modified from a public domain image http://thenounproject.com/term/menu/22191/ -->
-            <img src="content/images/hamburger.png" onclick="toggleNav()" alt="menu" id="menu-button" />
+            <img src="content/images/hamburger.white.png" onclick="toggleNav()" alt="menu" id="menu-button" />
             <header id="welcome">
                 <h1>Lynbrook Web Dev</h1>
                 <h2>LEARN, CREATE, AND PLAY</h2>
@@ -120,6 +120,14 @@
                 css += ".standard:hover, #welcome, #goodbye { background-color: " + color + "; color: " + contrastingColor + "; }";
 
                 document.getElementById("color-changer").innerHTML = css;
+                switch(contrastingColor) {
+                    case "#fff":
+                        document.getElementById("menu-button").setAttribute("src", "content/images/hamburger.white.png");
+                        break;
+                    case "#000":
+                        document.getElementById("menu-button").setAttribute("src", "content/images/hamburger.black.png");
+                        break;
+                }
             };
             
             function toggleNav() {
