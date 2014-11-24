@@ -1,46 +1,47 @@
 /* Modeled after http://purecss.io/layouts/side-menu/ */
 #nav-container {
-    width:200px;
-    height:100%;
-    position:fixed;
-    background-color:#272727;
-    margin-left:-200px;
-    transition:margin-left 0.5s linear;
-    padding-top:50px;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color: #272727;
+    margin-left: -200px;
+    transition: margin-left 0.5s linear;
+    padding-top: 50px;
 }
     #nav-container.nav-opened {
-        margin-left:0;
+        margin-left: 0;
     }
     #nav-container a {
-        width:100%;
-        display:block;
-        height:50px;
-        line-height:50px;
-        text-align:center;
-        text-decoration:none;
-        font-size:25px;
-        color:#fff;
+        width: 100%;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
     }
     #nav-container a.current,
     #nav-container a:hover {
-        background-color:#fff;
-        color:#000;
+        background-color: #fff;
+        color: #000;
     }
 
 #content-container {
-    position:relative;
-    width:100%;
-    transition:margin-left 0.5s linear;
+    position: relative;
+    width: 100%;
+    transition: margin-left 0.5s linear;
 }
 #content-container.nav-opened {
-    margin-left:200px;
+    margin-left: 200px;
 }
 
 #menu-btn {
     position:absolute;
     top: 30px;
-    left:30px;
-    height:50px;
+    left: 30px;
+    height: 50px;
+    cursor: pointer;
 }
 
 body, html {
