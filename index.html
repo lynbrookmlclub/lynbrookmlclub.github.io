@@ -9,7 +9,7 @@
         <style type="text/css" id="color-changer"></style>
     </head>
     <body>
-        <!--<section id="navigation-container">
+        <section id="nav-container">
             <nav>
                 <a href="index.html" class="current">Home</a>
                 <a href="updates.html">Updates</a>
@@ -17,7 +17,7 @@
                 <a href="https://github.com/lhswebdev/resources">Resources</a>
                 <a href="about.html">About</a>
             </nav>
-        </section>-->
+        </section>
         <section id="content-container">
             <header id="welcome">
                 <h1>Lynbrook Web Dev</h1>
@@ -99,6 +99,7 @@
                 <h3>Stay tuned for more information.</h3>
 
                 <a target="_blank" class="standard button" href="https://docs.google.com/forms/d/1H7QK5ZxHLnaRrGMjt-ONz0kxNNkysawqRO5etGMedqo/viewform?c=0&w=1">&lt; SIGN UP &gt;</a>
+                <button onclick="toggleNav()">open nav</button>
             </footer>
         </section>
 
@@ -119,6 +120,19 @@
 
                 document.getElementById("color-changer").innerHTML = css;
             };
+            
+            function toggleNav() {
+                var nav = document.getElementById("nav-container");
+                var content = document.getElementById("content-container");
+                
+                if(nav.className != "nav-opened") {
+                    nav.className = "nav-opened";
+                    content.className = "nav-opened";
+                } else {
+                    nav.className = "";
+                    content.className = "";
+                }
+            }
         </script>
     </body>
 </html>

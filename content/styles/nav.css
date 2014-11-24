@@ -1,1 +1,19 @@
 /* Modeled after http://purecss.io/layouts/side-menu/ */
+#nav-container {
+    width:300px;
+    height:100%;
+    position:fixed;
+    background-color:#272727;
+    margin-left:-300px;
+    transition:margin-left 1s linear;
+}
+    #nav-container.nav-opened {
+        margin-left:0;
+    }
+
+#content-container {
+    transition:margin-left 1s linear;
+}
+#content-container.nav-opened {
+    margin-left:300px;
+}
