@@ -1,19 +1,35 @@
 /* Modeled after http://purecss.io/layouts/side-menu/ */
 #nav-container {
-    width:300px;
+    width:200px;
     height:100%;
     position:fixed;
     background-color:#272727;
-    margin-left:-300px;
-    transition:margin-left 1s linear;
+    margin-left:-200px;
+    transition:margin-left 0.5s linear;
+    padding-top:50px;
 }
     #nav-container.nav-opened {
         margin-left:0;
     }
+    #nav-container a {
+        width:100%;
+        display:block;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+        text-decoration:none;
+        font-size:25px;
+        color:#fff;
+    }
+    #nav-container a.current,
+    #nav-container a:hover {
+        background-color:#fff;
+        color:#000;
+    }
 
 #content-container {
-    transition:margin-left 1s linear;
+    transition:margin-left 0.5s linear;
 }
 #content-container.nav-opened {
-    margin-left:300px;
+    margin-left:200px;
 }
