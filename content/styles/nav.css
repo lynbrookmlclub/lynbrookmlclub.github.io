@@ -23,7 +23,7 @@ body, html {
     
     background-color: #272727;
     
-    transition: margin-left 0.5s linear;
+    transition: margin-left 0.5s ease;
 }
     #nav-container.nav-opened {
         margin-left: 0;
@@ -51,7 +51,7 @@ body, html {
     position: relative;
     width: 100%;
     
-    transition: margin-left 0.5s linear;
+    transition: margin-left 0.5s ease;
 }
 #content-container.nav-opened {
     margin-left: 200px;
