@@ -28,11 +28,19 @@
     }
 
 #content-container {
+    position:relative;
     width:100%;
     transition:margin-left 0.5s linear;
 }
 #content-container.nav-opened {
     margin-left:200px;
+}
+
+#menu-btn {
+    position:absolute;
+    top: 30px;
+    left:30px;
+    height:50px;
 }
 
 body, html {
