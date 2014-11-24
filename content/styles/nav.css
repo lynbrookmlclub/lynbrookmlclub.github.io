@@ -7,9 +7,9 @@ body, html {
     position:absolute;
     top: 30px;
     left: 30px;
-    
+
     height: 50px;
-    
+
     cursor: pointer;
 }
 
@@ -17,12 +17,12 @@ body, html {
     position: fixed;
     margin-left: -200px;
     padding-top: 50px;
-    
+
     width: 200px;
     height: 100%;
-    
+
     background-color: #272727;
-    
+
     transition: margin-left 0.5s ease;
 }
     #nav-container.nav-opened {
@@ -30,13 +30,13 @@ body, html {
     }
     #nav-container a {
         display: block;
-        
+
         width: 100%;
         height: 50px;
         line-height: 50px;
-        
+
         text-decoration: none;
-        
+
         font-size: 25px;
         color: #fff;
     }
@@ -49,9 +49,45 @@ body, html {
 #content-container {
     position: relative;
     width: 100%;
-    
+
     transition: margin-left 0.5s ease;
 }
 #content-container.nav-opened {
     margin-left: 200px;
+}
+
+#nav-toggle { position: absolute; left: 50%; top: 50%; }
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
 }

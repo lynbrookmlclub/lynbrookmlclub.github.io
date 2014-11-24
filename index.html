@@ -20,7 +20,7 @@
         </section>
         <section id="content-container">
             <!-- modified from a public domain image http://thenounproject.com/term/menu/22191/ -->
-            <img src="content/images/hamburger.white.png" onclick="toggleNav()" alt="menu" id="menu-button" />
+            <a id="nav-toggle" href="#" onclick="toggleNav()" alt="menu" id="menu-button"><span></span></a>
             <header id="welcome">
                 <h1>Lynbrook Web Dev</h1>
                 <h2>LEARN, CREATE, AND PLAY</h2>
@@ -129,11 +129,11 @@
                         break;
                 }
             };
-            
+
             function toggleNav() {
                 var nav = document.getElementById("nav-container");
                 var content = document.getElementById("content-container");
-                
+
                 if (nav.className != "nav-opened") {
                     nav.className = "nav-opened";
                     content.className = "nav-opened";
@@ -143,6 +143,11 @@
                 }
             }
             document.getElementById("menu-button").onclick = toggleNav;
+
+            document.querySelector( "#nav-toggle" )
+                .addEventListener( "click", function() {
+                  this.classList.toggle( "active" );
+                });
         </script>
     </body>
 </html>
