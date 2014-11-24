@@ -28,8 +28,13 @@
     }
 
 #content-container {
+    width:100%;
     transition:margin-left 0.5s linear;
 }
 #content-container.nav-opened {
     margin-left:200px;
+}
+
+body, html {
+    overflow-x: hidden;
 }
