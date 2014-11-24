@@ -135,7 +135,6 @@
             };
 
             function toggleNav() {
-                $('#nav-icon4').toggleClass('open');
                 var nav = document.getElementById("nav-container");
                 var content = document.getElementById("content-container");
 
@@ -148,6 +147,11 @@
                 }
             }
             document.getElementById("menu-button").onclick = toggleNav;
+
+
+            $('#nav-icon4').click(function(){
+              $(this).toggleClass('open');
+            });
         </script>
     </body>
 </html>
