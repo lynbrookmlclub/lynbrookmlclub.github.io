@@ -48,7 +48,7 @@ body, html {
 
 /* Modeled after http://codepen.io/designcouch/pen/Atyop */
 
-#nav-icon4 {
+#menu-button {
   width: 60px;
   height: 45px;
   position: absolute;
@@ -58,7 +58,7 @@ body, html {
   cursor: pointer;
 }
 
-#nav-icon4 span {
+#menu-button span {
   display: block;
   position: absolute;
   height: 9px;
@@ -71,33 +71,33 @@ body, html {
   transition: .25s ease-in-out;
 }
 
-#nav-icon4 span:nth-child(1) {
+#menu-button span:nth-child(1) {
   top: 0px;
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(2) {
+#menu-button span:nth-child(2) {
   top: 18px;
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(3) {
+#menu-button span:nth-child(3) {
   top: 36px;
   transform-origin: left center;
 }
 
-#nav-icon4.open span:nth-child(1) {
+#menu-button.open span:nth-child(1) {
   transform: rotate(45deg);
   top: -3px;
   left: 8px;
 }
 
-#nav-icon4.open span:nth-child(2) {
+#menu-button.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-#nav-icon4.open span:nth-child(3) {
+#menu-button.open span:nth-child(3) {
   transform: rotate(-45deg);
   top: 39px;
   left: 8px;

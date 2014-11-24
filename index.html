@@ -21,7 +21,7 @@
         </section>
         <section id="content-container">
             <!-- modified from http://codepen.io/designcouch/pen/Atyop -->
-            <div id="nav-icon4" onclick="toggleNav()">
+            <div id="menu-button" onclick="toggleNav()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -136,7 +136,7 @@
             };
 
             function toggleNav() {
-                var hamburger = document.getElementById("nav-icon4"), current_class = hamburger.className;
+                var hamburger = document.getElementById("menu-button"), current_class = hamburger.className;
                 hamburger.className = (current_class == "open") ? "" : "open";
 
                 var nav = document.getElementById("nav-container");
