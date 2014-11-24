@@ -63,7 +63,7 @@ body, html {
   position: absolute;
   height: 9px;
   width: 100%;
-  background: white;
+  background-color: #fff;
   border-radius: 9px;
   opacity: 1;
   left: 0;

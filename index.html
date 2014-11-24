@@ -123,16 +123,9 @@
 
                 var css = ".standard { background-color: " + contrastingColor + "; color: " + color + "; }";
                 css += ".standard:hover, #welcome, #goodbye { background-color: " + color + "; color: " + contrastingColor + "; }";
+                css += "#menu-button span { background-color: " + contrastingColor + "; }";
 
                 document.getElementById("color-changer").innerHTML = css;
-                switch(contrastingColor) {
-                    case "#fff":
-                        document.getElementById("menu-button").setAttribute("src", "content/images/hamburger.white.png");
-                        break;
-                    case "#000":
-                        document.getElementById("menu-button").setAttribute("src", "content/images/hamburger.black.png");
-                        break;
-                }
             };
 
             function toggleNav() {
