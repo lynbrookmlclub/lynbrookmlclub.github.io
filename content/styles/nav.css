@@ -67,23 +67,21 @@ body, html {
   border-radius: 9px;
   opacity: 1;
   left: 0;
+  transform-origin: left center;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
 }
 
 #menu-button span:nth-child(1) {
   top: 0px;
-  transform-origin: left center;
 }
 
 #menu-button span:nth-child(2) {
   top: 18px;
-  transform-origin: left center;
 }
 
 #menu-button span:nth-child(3) {
   top: 36px;
-  transform-origin: left center;
 }
 
 #menu-button.open span:nth-child(1) {
