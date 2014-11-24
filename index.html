@@ -108,7 +108,6 @@
             </footer>
         </section>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
             var brightColors = [ "white", "yellow" ];
             var colorInput = document.getElementById("hook-color");
@@ -136,6 +135,9 @@
             };
 
             function toggleNav() {
+                var hamburger = document.getElementById("nav-icon4"), current_class = hamburger.className;
+                hamburger.className = (current_class == "open") ? "" : "open";
+
                 var nav = document.getElementById("nav-container");
                 var content = document.getElementById("content-container");
 
@@ -148,11 +150,6 @@
                 }
             }
             document.getElementById("menu-button").onclick = toggleNav;
-
-
-            $('#nav-icon4').click(function(){
-              $(this).toggleClass('open');
-            });
         </script>
     </body>
 </html>
