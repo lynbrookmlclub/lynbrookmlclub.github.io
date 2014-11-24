@@ -56,38 +56,49 @@ body, html {
     margin-left: 200px;
 }
 
-#nav-toggle { position: absolute; left: 50%; top: 50%; }
-
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: '';
-}
-#nav-toggle span:before {
-  top: -10px;
-}
-#nav-toggle span:after {
-  bottom: -10px;
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
 }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
+#nav-icon4 span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
 }
-#nav-toggle.active span {
-  background-color: transparent;
+
+#nav-icon4 span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
 }
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-#nav-toggle.active span:before {
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
 }
-#nav-toggle.active span:after {
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
 }

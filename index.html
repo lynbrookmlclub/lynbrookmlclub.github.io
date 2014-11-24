@@ -20,7 +20,11 @@
         </section>
         <section id="content-container">
             <!-- modified from a public domain image http://thenounproject.com/term/menu/22191/ -->
-            <a id="nav-toggle" href="#" onclick="toggleNav()" alt="menu" id="menu-button"><span></span></a>
+            <div id="nav-icon4" onclick="toggleNav()"> <!--id="menu-button"-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <header id="welcome">
                 <h1>Lynbrook Web Dev</h1>
                 <h2>LEARN, CREATE, AND PLAY</h2>
@@ -131,6 +135,7 @@
             };
 
             function toggleNav() {
+                $(this).toggleClass('open');
                 var nav = document.getElementById("nav-container");
                 var content = document.getElementById("content-container");
 
@@ -143,11 +148,6 @@
                 }
             }
             document.getElementById("menu-button").onclick = toggleNav;
-
-            document.querySelector( "#nav-toggle" )
-                .addEventListener( "click", function() {
-                  this.classList.toggle( "active" );
-                });
         </script>
     </body>
 </html>
