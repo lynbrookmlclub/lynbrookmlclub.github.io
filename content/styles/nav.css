@@ -52,7 +52,7 @@ body, html {
 #menu-button {
   width: 60px;
   height: 45px;
-  position: absolute;
+  position: fixed;
   margin: 25px;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
@@ -64,7 +64,7 @@ body, html {
     position: absolute;
     height: 9px;
     width: 100%;
-    background-color: #fff;
+    background-color: #ccc;
     border-radius: 9px;
     opacity: 1;
     left: 0;
