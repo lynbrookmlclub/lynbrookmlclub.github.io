@@ -7,7 +7,8 @@
         <link href="content/styles/index.css" rel="stylesheet" />
 
         <style type="text/css" id="color-changer"></style>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script src="content/scripts/nav.js"></script>
     </head>
     <body>
         <section id="nav-container">
@@ -109,7 +110,7 @@
             </footer>
         </section>
 
-        <script type="text/javascript">
+        <script>
             var brightColors = [ "white", "yellow", "#ccc", "#cccccc" ];
             var colorInput = document.getElementById("hook-color");
 
@@ -127,22 +128,6 @@
 
                 document.getElementById("color-changer").innerHTML = css;
             };
-
-            function toggleNav() {
-                var hamburger = document.getElementById("menu-button"), current_class = hamburger.className;
-                hamburger.className = (current_class == "open") ? "" : "open";
-
-                var nav = document.getElementById("nav-container");
-                var content = document.getElementById("content-container");
-
-                if (nav.className != "nav-opened") {
-                    nav.className = "nav-opened";
-                    content.className = "nav-opened";
-                } else {
-                    nav.className = "";
-                    content.className = "";
-                }
-            }
         </script>
     </body>
 </html>
