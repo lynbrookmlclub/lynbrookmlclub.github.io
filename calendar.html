@@ -7,6 +7,11 @@
         <link href="content/styles/calendar.css" rel="stylesheet" />
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <script src="content/scripts/nav.js"  type="text/javascript"></script>
+        <link rel='stylesheet' href='libraries/fullcalendar-2.2.3/fullcalendar.css' />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="libraries/fullcalendar-2.2.3/lib/moment.min.js"></script>
+        <script type="text/javascript" src="libraries/fullcalendar-2.2.3/fullcalendar.js"></script>
+        <script type="text/javascript" src="content/scripts/calendar.js"></script>
     </head>
 
     <body>
@@ -27,29 +32,8 @@
             <span></span>
         </div>
 
-        <table id="calendar">
-          <tr id="header">
-            <td id="left-header">
-              <button>Left</button>
-              <button>Right</button>
-              <button>Today</button>
-            </td>
-            <th id="heading"></th>
-            <td id="right-header">
-              <button>Month</button>
-              <button>Week</button>
-              <button>Day</button>
-            </td>
-          </tr>
-
-          <tr class="week" id="row-1"></tr>
-          <tr class="week" id="row-2"></tr>
-          <tr class="week" id="row-3"></tr>
-          <tr class="week" id="row-4"></tr>
-          <tr class="week" id="row-5"></tr>
-          <tr class="week" id="row-6"></tr>
-        </table>
-        <script type="text/javascript" src="content/scripts/calendarevents.js"></script>
+        <!-- Credits to FullCalendar by Adam Shaw for the calendar library -->
+        <div id='calendar'></div>
 
       </section>
     </body>
