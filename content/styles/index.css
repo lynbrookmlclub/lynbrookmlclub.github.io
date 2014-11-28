@@ -1,4 +1,19 @@
-﻿/* These are styles for the big welcome row at the top. */
+h1, h2, h3 {
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+    h1 {
+        font-size: 30px;
+    }
+h3, code, button {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+/* These are styles for the big welcome row at the top. */
 #welcome {
     background-color: #e74b3c;
     color: #fff;
