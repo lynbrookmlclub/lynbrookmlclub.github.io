@@ -106,3 +106,16 @@ body, html {
     top: 39px;
     left: 8px;
 }
+
+#header-bar {
+    width: 100%;
+    height:95px;
+    background-color: #E74B3C;
+}
+    #header-bar h1 {
+        color: #fff;
+        position: absolute;
+        left: 150px;
+        line-height: 95px;
+        font-size: 35px;
+    }
