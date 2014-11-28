@@ -57,6 +57,62 @@ body {
     #team article p {
         position:absolute;
         right: 50px;
-        width:50%;
+        width:47%;
         font-size: 21px;
     }
+
+@media all and (max-width: 1210px) and (min-width:1100px) {
+    #team article img {
+        margin-left: 25px;
+    }
+    #team article .quick-info {
+        left: 200px;
+    }
+    #team article h1 {
+        font-size:25px;
+    }
+    #team article h2 {
+        font-size:20px;
+    }
+    #team article h3 {
+        font-size:18px;
+    }
+}
+@media all and (max-width:1100px) {
+    #team article {
+        height: auto;
+        width: 90%;
+        text-align:center;
+        position:relative;
+        margin-top:50px;
+        padding-top:50px;
+        padding-bottom: 50px;
+    }
+    #team article img {
+        float:none;
+        margin: 0 auto;
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
+    }
+    #team article .quick-info {
+        position:static;
+        height: auto;
+        text-align:center;
+    }
+    #team article h1 {
+        text-align:center;
+    }
+    #team article h2 {
+        text-align:center;
+    }
+    #team article h3 {
+        text-align:center;
+    }
+    #team article p {
+        position:static;
+        width:70%;
+        margin:0 auto;
+        font-size: 21px;
+    }
+}
