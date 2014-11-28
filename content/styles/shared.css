@@ -9,6 +9,13 @@ html, body {
     font-family: 'Lato';
 }
 
+h1, h2, h3 {
+    margin: 0;
+}
+h1 {
+    font-weight: 400;
+}
+
 button {
     margin: 0 auto;
     margin-top: 25px;
