@@ -67,10 +67,10 @@ body, html {
 #menu-button span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 6px;
     width: 100%;
     background-color: #fff;
-    border-radius: 9px;
+    border-radius: 6px;
     opacity: 1;
     left: 0;
     transform-origin: left center;
