@@ -6,13 +6,6 @@ body {
     margin-bottom: 50px;
 }
 
-#team h1 {
-    margin-top: 75px;
-    color: #343333;
-    font-weight: 700;
-    font-size:35px;
-}
-
 #team article {
     height: 200px;
     width: 80%;
@@ -26,7 +19,7 @@ body {
         float:left;
         margin-top:25px;
         margin-left:50px;
-        
+
         height: 150px;
         width: 150px;
         border-radius: 150px;
