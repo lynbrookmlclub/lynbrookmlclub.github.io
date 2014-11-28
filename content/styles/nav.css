@@ -4,7 +4,7 @@ body, html {
 }
 
 #nav-container {
-    position: absolute;
+    position: fixed;
     margin-left: -200px;
     padding-top: 50px;
 
@@ -52,7 +52,7 @@ body, html {
 #menu-button {
   width: 60px;
   height: 45px;
-  position: fixed;
+  position: absolute;
   margin: 25px;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
