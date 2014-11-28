@@ -6,7 +6,7 @@ body, html {
 #nav-container {
     position: fixed;
     margin-left: -200px;
-    padding-top: 50px;
+    padding-top: 100px;
 
     width: 200px;
     height: 100%;
@@ -59,6 +59,9 @@ body, html {
   cursor: pointer;
   z-index: 1;
 }
+    #menu-button.open {
+        position: fixed;
+    }
 
 #menu-button span {
     display: block;
