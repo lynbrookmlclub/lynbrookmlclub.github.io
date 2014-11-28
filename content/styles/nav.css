@@ -61,6 +61,7 @@ body, html {
 }
     #menu-button.open {
         position: fixed;
+        margin-left:75px;
     }
 
 #menu-button span {
