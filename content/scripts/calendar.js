@@ -1,20 +1,9 @@
 $(document).ready(function(){
   $('#calendar').fullCalendar({
-    events: [
-        {
-            title  : 'event1',
-            start  : '2014-11-01'
-        },
-        {
-            title  : 'event2',
-            start  : '2014-11-05',
-            end    : '2014-11-07'
-        },
-        {
-            title  : 'event3',
-            start  : '2014-11-09T12:30:00',
-            allDay : false // will make the time show
-        }
-    ]
+    googleCalendarApiKey: 'AIzaSyDTGJh5n6dMIC5sREBfk8DVMRhXW4xt2cY',
+    events: {
+      googleCalendarId: '6n6cg8961ilfi0g8c7mhdi17qc@group.calendar.google.com'
+    },
+    color: '#2c3e50'
   });
 });
