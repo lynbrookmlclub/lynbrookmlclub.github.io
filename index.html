@@ -124,7 +124,7 @@
 
                 var css = ".standard { background-color: " + contrastingColor + "; color: " + color + "; }";
                 css += ".standard:hover, #welcome, #goodbye { background-color: " + color + "; color: " + contrastingColor + "; }";
-                css += "#menu-button span { background-color: " + (contrastingColor == "#fff" ? "#ccc" : "#000") + "; }";
+                css += "#menu-button span { background-color: " + (contrastingColor == "#fff" ? "#fff" : "#000") + "; }";
 
                 document.getElementById("color-changer").innerHTML = css;
             };
