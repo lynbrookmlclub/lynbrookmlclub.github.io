@@ -4,6 +4,6 @@ $(document).ready(function(){
     events: {
       googleCalendarId: '6n6cg8961ilfi0g8c7mhdi17qc@group.calendar.google.com'
     },
-    eventColor: '#2c3e50'
+    eventColor: '#E74B3C'
   });
 });
