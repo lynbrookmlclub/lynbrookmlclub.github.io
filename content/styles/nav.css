@@ -4,7 +4,7 @@ body, html {
 }
 
 #nav-container {
-    position: fixed;
+    position: absolute;
     margin-left: -200px;
     padding-top: 50px;
 
