@@ -1,3 +1,58 @@
-#team h1 {
-    
+body {
+    background-color: #F0F0F0;
 }
+
+#team h1 {
+    margin-top: 75px;
+    color: #343333;
+    font-weight: 700;
+    font-size:35px;
+}
+
+#team article {
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align:left;
+    position:relative;
+}
+    #team article img {
+        float:left;
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+        border: 1px solid black;
+        margin-top:25px;
+        margin-left:50px;
+    }
+    #team article .quick-info {
+        height: 200px;
+        position: absolute;
+        left: 225px;
+    }
+    #team article h1 {
+        color: #E74B3C;
+        width: 100%;
+        text-align:left;
+        margin-top:50px;
+        font-size:30px;
+    }
+    #team article h2 {
+        width: 100%;
+        text-align:left;
+        font-size:25px;
+        font-weight: 500;
+    }
+    #team article h3 {
+        width: 100%;
+        text-align:left;
+        margin-top:0;
+        font-size:20px;
+    }
+    #team article p {
+        position:absolute;
+        right: 50px;
+        width:50%;
+        font-size: 21px;
+    }
