@@ -2,6 +2,10 @@ body {
     background-color: #F0F0F0;
 }
 
+#team {
+    margin-bottom: 50px;
+}
+
 #team h1 {
     margin-top: 75px;
     color: #343333;
@@ -16,6 +20,7 @@ body {
     background-color: #fff;
     text-align:left;
     position:relative;
+    margin-top:50px;
 }
     #team article img {
         float:left;
