@@ -1,0 +1,9 @@
+table, th, td {
+    border: 1px solid black;
+}
+#calendar {
+  margin-left: 100px;
+}
+body {
+  background-color: #ccc;
+}
