@@ -46,3 +46,10 @@ a {
             background-color: #e74b3c;
             color: #fff;
         }
+
+.title {
+  margin-top: 75px;
+  color: #343333;
+  font-weight: 700;
+  font-size:35px;
+}
