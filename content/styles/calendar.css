@@ -1,3 +1,7 @@
+body {
+  background-color: #F0F0F0;
+}
+
 #calendar {
   margin: 0 5% 0 5%;
   width: 90%;
