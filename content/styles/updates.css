@@ -15,7 +15,7 @@ body {
         border-radius: 20px;
     }
         #updates > article > div {
-            width: 1%;
+            width: 20px;
             height: 290px;
             margin: -20px -40px;
             text-align: left;
@@ -43,3 +43,21 @@ body {
             font-size: 20px;
             line-height: 135%;
         }
+
+@media all and (max-width:1280px) {
+    #updates > article {
+        height: 300px;
+    }
+        #updates > article > div {
+            height: 340px;
+        }
+}
+
+@media all and (max-width:1024px) {
+    #updates > article {
+        height: 400px;
+    }
+        #updates > article > div {
+            height: 440px;
+        }
+}
