@@ -215,8 +215,21 @@ h3, code, button {
             margin-left: -10px;
             display: block;
         }
+<<<<<<< Updated upstream
 
         #lang-boxes #html-box { margin-top: 0; }
         #lang-boxes #css-box { margin-top: 360px; }
         #lang-boxes #js-box { margin-top: 720px; }
 }
+=======
+        .bubbles #html-bubble {
+            margin-top: 0;
+        }
+        .bubbles #css-bubble {
+            margin-top: 360px;
+        }
+        .bubbles #js-bubble {
+            margin-top: 720px;
+        }
+}
+>>>>>>> Stashed changes
