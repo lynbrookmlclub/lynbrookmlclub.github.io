@@ -1,0 +1,45 @@
+body {
+    background-color: #F0F0F0;
+}
+
+#updates {
+    margin-bottom: 50px;
+}
+    #updates > article {
+        text-align: left;
+        background-color: #fff;
+        width: 60%;
+        height: 250px;
+        margin: 50px auto 0 auto;
+        padding: 20px 40px;
+        border-radius: 20px;
+    }
+        #updates > article > div {
+            width: 1%;
+            height: 290px;
+            margin: -20px -40px;
+            text-align: left;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: #e74b3c;
+            float: left;
+        }
+        .update-info > h1 {
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #e74b3c;
+            font-weight: 800;
+            padding: 5px 0;
+        }
+        .update-info > h2 {
+            text-transform: lowercase;
+            font-size: 25px;
+            color: #bababa;
+            font-weight: 500;
+            padding-bottom: 5px;
+        }
+        #updates > article > p {
+            margin: 0;
+            font-size: 20px;
+            line-height: 135%;
+        }
