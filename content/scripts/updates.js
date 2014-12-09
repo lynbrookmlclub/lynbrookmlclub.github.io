@@ -14,13 +14,13 @@ var updates = [
 
 var section, article, div, info, updatetitle, updatetitlecontent, date, datecontent, text, textcontent;
 
-for(var i = 0; i<updates.length; i++) {
+for(var i = updates.length-1; i>=0; i--) {
     section = document.createElement("section");
-    section.id = "updates";
+    section.setAttribute("id","updates");
     article = document.createElement("article");
     div = document.createElement("div");
     info = document.createElement("section");
-    info.class = "update-info";
+    info.setAttribute("class","update-info");
     updatetitle = document.createElement("h1");
     updatetitlecontent = document.createTextNode(updates[i].title);
     updatetitle.appendChild(updatetitlecontent);
