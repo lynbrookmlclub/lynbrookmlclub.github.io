@@ -12,6 +12,7 @@ body {
         margin: 50px auto 0 auto;
         padding: 20px 40px;
         border-radius: 20px;
+        border-left: 10px solid #e74b3c;
     }
         .update-info > h1 {
             text-transform: uppercase;
