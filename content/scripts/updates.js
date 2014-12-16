@@ -12,7 +12,7 @@ var updates = [
     {
         "title":"First Meeting",
         "date": "December 18th, 2014",
-        "content": "AT LAST, the time has come for this club to commence. The first Lynbrook Web Dev meeting will take place on Tuesday, January 13 at lunch in room 608. This first meeting will be quick and purely informational, so no need to bring anything. We'll be giving an overview of our plans for the semester as well as instructions for each of you as members. After we get this informational meeting out of the way, we will begin fun stuff the following week. For now, make sure to come out to our first meeting, as well as fill out this <a href='https://docs.google.com/forms/d/1H7QK5ZxHLnaRrGMjt-ONz0kxNNkysawqRO5etGMedqo/viewform?c=0&w=1' target='_blank'>membership form</a>"
+        "content": "AT LAST, the time has come for this club to commence. The first Lynbrook Web Dev meeting will take place on Tuesday, January 13 at lunch in room 608. This first meeting will be quick and purely informational, so no need to bring anything. We'll be giving an overview of our plans for the semester as well as instructions for each of you as members. After we get this informational meeting out of the way, we will begin fun stuff the following week. For now, make sure to come out to our first meeting!"
     }
 ];
 
