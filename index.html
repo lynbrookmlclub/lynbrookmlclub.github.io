@@ -122,7 +122,15 @@
                 //so that we don't need to check against a list of every
                 //possible color
 
-                var color = colorInput.value;
+                var color = colorInput.value.toLowerCase();
+                switch(color) {
+                    case "lilac":
+                        color = "#C8A2C8";
+                    break;
+                    case "burgundy":
+                        color = "#800020";
+                    break;
+                }
                 var contrastingColor = brightColors.indexOf(color.toLowerCase()) === -1 ? "#fff" : "#000";
 
                 var css = ".standard { background-color: " + contrastingColor + "; color: " + color + "; }";
