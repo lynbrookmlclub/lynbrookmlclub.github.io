@@ -114,6 +114,8 @@
         </section>
 
         <script type="text/javascript">
+            var customColors = { "lilac": "#C8A2C8", "burgundy": "#800020" };
+
             var brightColors = [ "white", "yellow", "#ccc", "#cccccc" ];
             var colorInput = document.getElementById("hook-color");
 
@@ -123,14 +125,8 @@
                 //possible color
 
                 var color = colorInput.value.toLowerCase();
-                switch(color) {
-                    case "lilac":
-                        color = "#C8A2C8";
-                    break;
-                    case "burgundy":
-                        color = "#800020";
-                    break;
-                }
+                color = customColors[color] == null ? color :customColors[color]; //Load a custom color if it's not-null
+
                 var contrastingColor = brightColors.indexOf(color.toLowerCase()) === -1 ? "#fff" : "#000";
 
                 var css = ".standard { background-color: " + contrastingColor + "; color: " + color + "; }";
