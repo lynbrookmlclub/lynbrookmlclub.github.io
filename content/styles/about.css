@@ -43,11 +43,16 @@ body {
             font-weight: 300;
         }
     #team > article > p {
-        float: right;
+        font-size: 16px;
         width: 47%;
+        margin: 0;
         margin-right: 50px;
 
-        font-size: 16px;
+        /*Fix for making the p vertically centered and floated right. It was set to a block level element: didn't want to mess with that*/
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
     }
 
 /* Collapse in the image and quick-info so the paragraph doesn't run over the email. */
@@ -83,6 +88,10 @@ body {
         margin-left:0;
     }
     #team article p {
+        /*Undo the vertical centering*/
+        transform: none;
+        position: static;
+
         float:none;
         width:70%;
         margin:0 auto;

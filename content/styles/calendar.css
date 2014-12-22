@@ -3,6 +3,8 @@ body {
 }
 
 #calendar {
-  margin: 50px 5% 0 5%;
-  width: 90%;
+    margin: 50px auto;
+    padding: 2% 3%;
+    background-color: white;
+    width: 80%;
 }
