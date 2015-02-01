@@ -13,6 +13,11 @@ var updates = [
         "title":"First Meeting",
         "date": "December 18th, 2014",
         "content": "AT LAST, the time has come for this club to commence. The first Lynbrook Web Dev meeting will take place on Tuesday, January 13 at lunch in room 608. This first meeting will be quick and purely informational, so no need to bring anything. We'll be giving an overview of our plans for the semester as well as instructions for each of you as members. After we get this informational meeting out of the way, we will begin fun stuff the following week. For now, make sure to come out to our first meeting!"
+    },
+    {
+        "title":"CAML Takeover",
+        "date": "February 4, 2015",
+        "content": "Due to the CAML taking place in room 608 on Tuesday, February 10, we will not be having a member meeting. See you all after the break! If you ever need to look at any of the resources, just look through our presentations in the Resources section of our website."
     }
 ];
 
