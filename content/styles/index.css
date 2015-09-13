@@ -127,6 +127,13 @@ h3, code, button {
     background-size:cover;
     background-attachment: fixed;
 }
+
+/* See http://stackoverflow.com/questions/20268962/fixed-attachment-background-image-flicker-disappear-in-chrome-when-coupled-with */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #workshop {
+        background-attachment: scroll;
+    }
+}
 #hackathon {
     color: black;
     
