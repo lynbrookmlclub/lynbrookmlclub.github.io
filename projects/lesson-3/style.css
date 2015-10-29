@@ -1,0 +1,27 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #4187ff;
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+img {
+  width: 175px;
+}
+
+a {
+  color: #00ff45;
+}
+
+p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+div {
+  margin-top: 25px;
+}
