@@ -18,6 +18,11 @@ var updates = [
         "title":"CAML Takeover",
         "date": "February 4, 2015",
         "content": "Due to the CAML taking place in room 608 on Tuesday, February 10, we will not be having a member meeting. See you all after the break! If you ever need to look at any of the resources, just look through our presentations in the Resources section of our website."
+    },
+    {
+        "title": "New Year, New Update!",
+        "date": "August 27, 2016",
+        "content": "It's finally the new school year, and we're pumped to start the third year of Web Dev Club! Check out our Club Info Day booth on Thursday, 9/1 for more info."
     }
 ];
 
