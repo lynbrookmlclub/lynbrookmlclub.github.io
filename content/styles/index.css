@@ -120,27 +120,50 @@ h3, code, button {
         margin-top: 50px;
     }
 
-#workshop {
+#meeting {
     color: white;
 
     background: url('../images/graypattern.jpg'); /* Thanks! http://www.thewallpapers.org/download/26391/gray-patterns-wallpaper */
     background-size:cover;
     background-attachment: fixed;
 }
+    #track-boxes { /* These are styles for the front-end / back-end description boxes */
+        width:70%;
+        margin:25px auto;
+        overflow:hidden;
+    }
+        #track-boxes > article {
+            margin:10px;
+            width:350px;
+            height:240px;
+            border:1px solid white;
+            border-top-width:15px;
+            padding:15px;
+            padding-bottom:20px;
+        }
+            #front-box {
+                float:left;
+            }
+            #back-box {
+                float:right;
+            }
+            #track-boxes > article > h1 {
+                margin-top:25px;
+            }
 
 /* See http://stackoverflow.com/questions/20268962/fixed-attachment-background-image-flicker-disappear-in-chrome-when-coupled-with */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    #workshop {
+    #meeting {
         background-attachment: scroll;
     }
 }
-#hackathon {
+#workshop {
     color: black;
     
     background: white;
     position: relative;
 }
-    #hackathon > img {
+    #workshop > img {
         width: 300px;
         position: absolute;
         top: 80px;
@@ -166,15 +189,32 @@ h3, code, button {
 /* Assorted media queries that change the page depending on it's size. */
 @media all and (max-width:1200px) {
     /* This keeps the images out of the way of the text for hackathons */
-    #hackathon > img {
+    #workshop > img {
         width: 200px;
     }
+
+    #track-boxes {
+        width:85%;
+    }
+        #track-boxes > article {
+            width:315px;
+        }
 }
 
 @media all and (max-width:890px) {
     #lang-boxes > article > p {
         font-size: 18px;
     }
+    #track-boxes { /* Removes the floats and centers boxes regularly */
+        text-align: center;
+    }
+        #track-boxes > article {
+            width:90%;
+            height:initial;
+            margin:10px 0;
+            float:none;
+            display:inline-block;
+        }
 }
 
 @media all and (max-width:770px) {
@@ -183,7 +223,7 @@ h3, code, button {
     }
 
     /* Hides the mock image and centers the phone image. */
-    #hackathon > img {
+    #workshop > img {
         position: static;
         width: 40%;
         margin-top: 50px;
