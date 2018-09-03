@@ -23,6 +23,11 @@ var updates = [
         "title": "New Year, New Update!",
         "date": "August 27, 2016",
         "content": "It's finally the new school year, and we're pumped to start the third year of Web Dev Club! Check out our Club Info Day booth on Thursday, 9/1 for more info."
+    },
+    {
+        "title": "Never 2 Late for an Update",
+        "date": "September 5, 2018",
+        "content": "It's Club Info Day once again...two years later! Thanks for coming by our website. If you want to stay updated for our first meeting and haven't signed up at our booth today, sign up on our interest list linked on the 'Home' page. You'll then receive an exciting survey after."
     }
 ];
 
