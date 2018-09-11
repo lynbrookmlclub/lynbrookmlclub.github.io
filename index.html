@@ -152,6 +152,13 @@ Source is available at https://github.com/lhswebdev/lhswebdev.github.io
         </section>
 
         <script type="text/javascript">
+            // easter egg: clicking the css icon makes the page turn upsidedown
+            document.querySelector("#css-box img").addEventListener("click", function() {
+                document.body.style.transition = "2s";
+                document.body.classList.toggle("spins");
+            });
+            
+            
             var customColors = { "lilac": "#C8A2C8", "burgundy": "#800020" };
 
             var brightColors = [ "white", "yellow", "#ccc", "#cccccc" ];
