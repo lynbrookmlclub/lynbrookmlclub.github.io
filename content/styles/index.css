@@ -1,3 +1,9 @@
+.spins {
+    -webkit-transform: rotate(180deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(180deg);  /* IE 9 */
+            transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+}
+
 h1, h2, h3 {
     font-weight: 300;
     text-align: center;
