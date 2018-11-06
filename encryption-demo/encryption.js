@@ -10,7 +10,7 @@ function shiftChar(ch, sh) {
 	return String.fromCharCode(i);
 }
 
-function caeser(text, shift) {
+function caesar(text, shift) {
 	text = text.toLowerCase();
 	var ciphertext = "";
 	for (var i=0; i < text.length; i++) {
