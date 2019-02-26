@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NetHunt 2019</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+		p, li {
+			font-family:Roboto, sans-serif;
+			line-height:1.5em;
+		}
+		body {
+			padding:0px;
+			margin:0;
+		}
+		ol {
+			list-style:none;
+			counter-reset:lcount;
+			padding-left:0;
+		}
+		ol li {
+			counter-increment: lcount;
+			margin:15px 10px;
+		}
+		ol li::before {
+			content: counter(lcount);
+			color:#bee;
+			margin-right:20px;
+			font-size:40px;
+			font-family: 'Playfair Display', serif;
+		}
+		div {
+			margin: auto;
+			max-width:800px;
+			padding:20px 0;
+		}
+		h1 {
+			font-family: 'Playfair Display', serif;
+			text-align:center;
+			background-color:#bee;
+			font-size:50px;
+			margin:0 0 30px 0;
+			padding:25px;
+			color:white;
+		}
+		h2 {
+			font-family: 'Playfair Display', serif;
+		}
+	</style>
+</head>
+<body>
+
+		<h1>NetHunt</h1>
+		<div>
+		<h2>Example</h2>
+	<p>
+<b>Question:</b> In 1999, a popular science fiction film directed by two sisters was released. What is the name of the holiday California follows that falls on the same day and month that film was released?<br>
+<b>Answer:</b> Cesar Chavez Day<br>
+<b>Source:</b> https://en.wikipedia.org/wiki/The_Matrix<br>
+https://en.wikipedia.org/wiki/Cesar_Chavez_Day<br>
+</p>
+<h2>Questions</h2>
+<ol>
+	<li>Pluto was named after the Greek God of the Underworld. At the time, how old was the person who proposed the name?</li>
+	<li>The movie Inception features a building influenced by a library named after a writer of children’s books. Who is this author?</li>
+	<li>What color is a #bee?</li>
+	<li>According to Ling of LingsCars.com, what will happen if you mess with her website?</li>
+	<li>On the day 210 years after the Library of Congress was established, how were the O’s styled on the Internet’s most visited webpage?</li>
+	<li>What text was displayed on mario.com in 2006?</li>
+	<li>Before construction, how many steps did the Lynbrook quad have?</li>
+</ol>
+</div>
+<script type="text/javascript">
+	console.log("hint: check the source code for #4");
+</script>
+</body>
+</html>
