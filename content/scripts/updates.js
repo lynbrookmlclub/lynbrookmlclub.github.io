@@ -28,6 +28,11 @@ var updates = [
         "title": "Never 2 Late for an Update",
         "date": "September 5, 2018",
         "content": "It's Club Info Day once again...two years later! Thanks for coming by our website. If you want to stay updated for our first meeting and haven't signed up at our booth today, sign up on our interest list linked on the 'Home' page. You'll then receive an exciting survey after."
+    },
+    {
+        title: "New Meeting Room",
+        date: "September 17, 2019",
+        content: "Club Info Day just happened, and your officer team is excited for a new year! You can sign up to receive emails about the club! We also have a new advisor, Mrs. Levin! That means we'll be meeting in a new room: room 204. Make sure to stop by and learn more! We'll see you then!"
     }
 ];
 
