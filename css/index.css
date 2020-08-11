@@ -187,6 +187,15 @@ path {
     font-size: 0.85em !important;
 }
 
+.person .links {
+    display: flex;
+    justify-content: center;
+}
+
+.person .links a {
+    margin: 0 5%;
+}
+
 .person p {
     line-height: 1em;
 }
