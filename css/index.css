@@ -350,7 +350,7 @@ button.cta i.fa, .button.cta i.fa {
 }
 
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1200px) {
     nav {
         background: black;
         height: 100vh;
@@ -387,6 +387,10 @@ button.cta i.fa, .button.cta i.fa {
         z-index: 1;
         visibility: hidden;
         opacity:0;
+    }
+
+    #hero-text{
+        font-size:2em;
     }
 }
 
