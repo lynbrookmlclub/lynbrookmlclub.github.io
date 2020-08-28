@@ -224,6 +224,7 @@ path {
 
 .profilePic {
     width: 250px;
+    object-position: center;
 }
 
 .repl {
@@ -236,7 +237,7 @@ path {
 
 :root {
     --dark-bg: darkgrey;
-    --theme-color: #E74B3C;
+    --theme-color: #0099ff;
     --accent-color: var(--theme-color);
 }
 
