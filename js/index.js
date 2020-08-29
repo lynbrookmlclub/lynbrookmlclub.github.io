@@ -30,3 +30,8 @@ document.querySelectorAll("#hero-img path").forEach(it => {
     it.style.strokeDasharray = it.getTotalLength();
     it.style.strokeDashoffset = it.getTotalLength();
 });
+
+let iframe = document.getElementById("videoEmbed");
+iframe.onload = () => {
+    iframe.style.height = iframe.offsetWidth * 0.5625 + "px";
+}

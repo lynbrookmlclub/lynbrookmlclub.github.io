@@ -19,10 +19,10 @@ body {
     margin: 0 auto;
     position: fixed;
     z-index: -1;
-    filter: blur(50px) brightness(0.75);
-    -moz-filter: blur(50px) brightness(0.75);
-    -webkit-filter: blur(50px) brightness(0.75);
-    -o-filter: blur(50px) brightness(0.75);
+    filter: blur(50px) brightness(0.5);
+    -moz-filter: blur(50px) brightness(0.5);
+    -webkit-filter: blur(50px) brightness(0.5);
+    -o-filter: blur(50px) brightness(0.5);
 }
 
 #hero-text{
@@ -237,7 +237,7 @@ path {
 
 :root {
     --dark-bg: darkgrey;
-    --theme-color: #0099ff;
+    --theme-color: #2ba0ff;
     --accent-color: var(--theme-color);
 }
 
@@ -263,6 +263,11 @@ h2{
 
 #home-logo{
     font-size:1.25em;
+}
+
+#videoEmbed{
+    width: 100%;
+    height: 0px;
 }
 
 @supports (backdrop-filter:blur(5px)){
@@ -318,7 +323,7 @@ p {
 }
 
 a[href] {
-    color: var(--theme-color);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
