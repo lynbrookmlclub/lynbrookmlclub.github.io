@@ -365,7 +365,7 @@ button.cta i.fa, .button.cta i.fa {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     nav {
         background: black;
         height: 100vh;
@@ -407,9 +407,13 @@ button.cta i.fa, .button.cta i.fa {
     #hero-text{
         font-size:2em;
     }
+
+    .col3 {
+        display:none;
+    }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
     header nav {
         display: block;
     }
