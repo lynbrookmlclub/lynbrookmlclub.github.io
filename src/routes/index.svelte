@@ -1,61 +1,98 @@
-<script context="module" lang="ts">
-	export const prerender = true;
-</script>
+<script lang="ts"> 
+    import 'papercss/dist/paper.min.css'
+    import Navbar from 'spaper/components/Navbar.svelte'
+    import Button from 'spaper/components/Button.svelte'
+    let email : string = ""; 
+    let password: string = "";
+    let text: string = "";
 
-<script lang="ts">
-	import Counter from '$lib/Counter.svelte';
-</script>
+</script> 
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+<Navbar>
+    <h3 slot="brand">
+      <a href="#">Lynbrook ML</a>
+    </h3>
+    <ul class="inline">
+      <li><a class="other-links" href="/officers">About Us</a></li>
+      <li><a class="other-links" href="/signup">Sign Up</a></li>
+    </ul>
+</Navbar>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</span>
+<div class='ml-image'> 
+    <h1 class="inspire-text"> At ML Club, we create the future.  </h1>
+</div> 
 
-		to your new<br />SvelteKit app
-	</h1>
+<h1> Henry plz add link buttons here </h1>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
+<div class="questions">
+    <form action="https://formspree.io/f/mjvlopqj" method="POST">
+      <input
+        type="email"
+        placeholder="Email"
+        bind:value={email}
+        class="center-block"
+        id="subject-email"
+      />
+      <textarea
+        name="message"
+        type="textarea"
+        bind:value={text}
+        placeholder="Message"
+        class="center-block"
+        id="subject-text"
+      />
+      <div class="subtn" type="submit">
+        <Button
+          type="secondary"
+          size="default"
+          block
+          outlined
+          disabled={email == null ||
+            text == null ||
+            email.length == 0 ||
+            text.length == 0}>Send!</Button
+        >
+      </div>
+    </form>
+  </div>
 
-	<Counter />
-</section>
 
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
+<style> 
+    .other-links {
+        color: black;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
 
-	h1 {
-		width: 100%;
-	}
+    .ml-image {
+        background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+        background-repeat: no-repeat;
+        background-size: 100%; 
+        height: 26em;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
+    .inspire-text {
+        color: white;
+        font-size: 5em;
+        text-align: center;
+       
+    }
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+    /** questions form*/
+
+    .questions {
+        text-align: center;
+    }
+
+    #subject-text, #subject-email, .subtn {
+        margin-left: auto; 
+        margin-right: auto;
+        width: 50%;
+        margin-top: 2em;
+    }
+
+</style> 
+      
