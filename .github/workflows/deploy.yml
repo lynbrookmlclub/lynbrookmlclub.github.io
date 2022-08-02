@@ -31,6 +31,7 @@ jobs:
       run: npm i
 
     - name: build
+      working-directory: source
       run: npm run build
 
     - name: checkout gh-pages branch
