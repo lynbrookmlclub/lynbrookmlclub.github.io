@@ -10,7 +10,7 @@
 
 <Navbar>
     <h3 slot="brand">
-      <a href="#">Lynbrook ML</a>
+      <a href={null}>Lynbrook ML</a>
     </h3>
     <ul class="inline">
       <li><a class="other-links" href="/officers">About Us</a></li>
