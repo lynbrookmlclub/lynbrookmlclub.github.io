@@ -15,6 +15,11 @@ jobs:
       with:
         path: source
 
+    - name: copy meta files for cache
+      run: |
+        cp source/package.json .
+        cp source/package-lock.json .
+
     - name: install node
       uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93 # 3.4.1
       with:
