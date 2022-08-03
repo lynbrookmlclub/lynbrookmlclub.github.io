@@ -2,7 +2,7 @@
 	"name": "temp.github.io",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "NODE_ENV=development vite dev",
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
