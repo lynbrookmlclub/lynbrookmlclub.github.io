@@ -8,8 +8,8 @@
     <a href="/">Lynbrook ML</a>
   </h3>
   <ul class="inline">
-    <li><a class="other-links" href="/officers">About Us</a></li>
-    <li><a class="other-links" href="/signup">Sign Up</a></li>
+    <li><a class="other-links" href="./officers">About Us</a></li>
+    <li><a class="other-links" href="./signup">Sign Up</a></li>
   </ul>
 </Navbar>
 <slot />

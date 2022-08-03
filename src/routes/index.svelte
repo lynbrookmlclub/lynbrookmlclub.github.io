@@ -2,6 +2,18 @@
   import Button from "spaper/components/Button.svelte";
   let email: string = "";
   let text: string = "";
+
+  async function submitForm() {
+    await fetch("https://formspree.io/f/xyylnqbg", {
+      headers: {
+        "Content-Type": "application/json",
+        "Data-Type": "json",
+      },
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify({ email, text }),
+    });
+  }
 </script>
 
 <div class="ml-image">
@@ -11,7 +23,7 @@
 <h1>Henry plz add link buttons here</h1>
 
 <div class="questions">
-  <form action="https://formspree.io/f/mjvlopqj" method="POST">
+  <form on:submit|preventDefault={submitForm}>
     <input
       type="email"
       placeholder="Email"
