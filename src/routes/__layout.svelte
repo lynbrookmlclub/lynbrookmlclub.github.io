@@ -1,7 +1,8 @@
 <script>
   import "papercss/dist/paper.min.css";
   import Navbar from "spaper/components/Navbar.svelte";
-  import { base } from "$app/paths";
+  // import { base } from "$app/paths";
+  const base = "";
 </script>
 
 <Navbar>
