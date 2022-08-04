@@ -2,7 +2,7 @@
 	"name": "temp.github.io",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "NODE_ENV=development vite dev",
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
@@ -12,13 +12,13 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.38",
 		"@sveltejs/kit": "next",
-		"@types/cookie": "^0.5.1",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"eslint": "^8.16.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"svelte": "^3.46.0",
+		"svelte": "^3.44.0",
 		"svelte-check": "^2.7.1",
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
@@ -27,7 +27,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.5.0",
-		"cookie": "^0.4.1"
+		"@tsconfig/svelte": "^3.0.0",
+		"papercss": "^1.8.3",
+		"spaper": "^0.8.6"
 	}
 }
