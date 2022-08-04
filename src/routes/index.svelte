@@ -1,6 +1,5 @@
 <script lang="ts">
   import Button from "spaper/components/Button.svelte";
-  import { base } from "$app/paths";
   let email: string = "";
   let text: string = "";
 
