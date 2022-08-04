@@ -17,7 +17,7 @@ const config = {
     }),
     paths: {
       // TODO remove this on full deploy
-      base: dev ? "" : "",
+      base: dev ? "" : "/temp.github.io",
     },
     prerender: {
       default: true,
