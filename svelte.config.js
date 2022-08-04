@@ -16,8 +16,10 @@ const config = {
       fallback: "404.html",
     }),
     paths: {
-      // TODO remove this on full deploy
-      base: dev ? "" : "",
+      // TODO remove this whole statement on full deploy
+      // DO NOT TOUCH until the repo is moved to lynbrookml.github.io
+      // if there are problems, it is elsewhere, not here
+      base: dev ? "" : "/temp.github.io",
     },
     prerender: {
       default: true,

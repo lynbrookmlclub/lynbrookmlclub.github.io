@@ -14,7 +14,7 @@
       body: JSON.stringify({ email, text }),
     });
   }
-  
+
 </script>
 
 <div class="ml-image">
@@ -34,7 +34,7 @@
     >
       Github</button
     >
-    <button class="margin" size="large" href="/">Youtube</button>
+    <button class="margin" size="large" href="#">Youtube</button>
   </div>
 </slot>
 
