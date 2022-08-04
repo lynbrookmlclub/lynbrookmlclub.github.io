@@ -4,7 +4,7 @@
   let text: string = "";
 
   async function submitForm() {
-    await fetch("https://formspree.io/f/xyylnqbg", {
+    await fetch("https://formspree.io/f/mjvlopqj", {
       headers: {
         "Content-Type": "application/json",
         "Data-Type": "json",
@@ -22,14 +22,22 @@
 
 <slot>
   <div class="row flex-center child-borders">
-    <button class="margin" size="large" href="https://discord.gg/p5tCyBeWAF" ><img src="/src/icons/Discord.png" />Discord</button>
-    <button class="margin" size="large" href="mailto:lhsmlclub@gmail.com">Gmail</button>
-    <button class="margin" size="large" href="https://github.com/lynbrookmlclub"> Github</button>
+    <button class="margin" size="large" href="https://discord.gg/p5tCyBeWAF"
+      ><img src="/src/icons/Discord.png" />Discord</button
+    >
+    <button class="margin" size="large" href="mailto:lhsmlclub@gmail.com"
+      >Gmail</button
+    >
+    <button
+      class="margin"
+      size="large"
+      href="https://github.com/lynbrookmlclub"
+    >
+      Github</button
+    >
     <button class="margin" size="large" href="/">Youtube</button>
-
   </div>
 </slot>
-
 
 <div class="questions">
   <form on:submit|preventDefault={submitForm}>
@@ -65,8 +73,6 @@
 </div>
 
 <style>
-
-
   .other-links {
     color: black;
     font-size: 1.5em;
