@@ -1,5 +1,5 @@
 <script>
-  import "papercss/dist/paper.min.css";
+  import "papercss/dist/paper.css";
   import Navbar from "spaper/components/Navbar.svelte";
   import { base } from "$app/paths";
 </script>

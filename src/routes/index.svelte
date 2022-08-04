@@ -14,6 +14,7 @@
       body: JSON.stringify({ email, text }),
     });
   }
+  
 </script>
 
 <div class="ml-image">
@@ -48,7 +49,6 @@
       class="center-block"
       id="subject-text"
     />
-    http://localhost:5173/
     <div class="subtn" type="submit">
       <Button
         type="secondary"

@@ -1,5 +1,6 @@
 <script lang="ts">
   import Officer from "../components/Officer.svelte";
+  import { loremIpsum } from "lorem-ipsum";
 
   interface Person {
     name: string;
@@ -10,13 +11,14 @@
     photoURL: string;
   }
 
+  const paragraph : string = loremIpsum() + loremIpsum() + loremIpsum();
   const officers: Person[] = [
     {
       name: "Anish Lakkapragada",
       shortPhrase: "smh bruh lmao",
       title: "Co-VP",
       grade: 11,
-      blurb: "Anish is a memelord who likes to code blah blah blah blah",
+      blurb: paragraph,
       photoURL: "https://i.imgur.com/XqQZQZq.jpg",
     },
     {
@@ -24,7 +26,7 @@
       shortPhrase: "enjoyer of ",
       title: "Co-VP",
       grade: 11,
-      blurb: "Marc is a memelord who likes to code blah blah blah blah",
+      blurb: paragraph,
       photoURL: "https://i.imgur.com/XqQZQZq.jpg",
     },
     {
@@ -32,15 +34,25 @@
       shortPhrase: "yeat he dont have one",
       title: "Secretary",
       grade: 12,
-      blurb: "Agnik is a memelord who likes to code blah blah blah blah",
+      blurb: paragraph,
       photoURL: "https://i.imgur.com/XqQZQZq.jpg",
     },
   ];
 </script>
 
+<h1 class="officer-header"> Officer Team 2022 </h1>
+<div class="officers-list">
+<hr>
 {#each officers as officer, i}
   <Officer {...officer} imageright={true} photoLeft />
 {/each}
+</div>
 
 <style>
+  .officer-header {
+    text-align: center;
+  }
+  .officers-list {
+    margin-top: 1em;
+  }
 </style>
