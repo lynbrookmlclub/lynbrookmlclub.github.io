@@ -38,8 +38,8 @@
   ];
 </script>
 
-{#each officers as officer}
-  <Officer {...officer} photoLeft />
+{#each officers as officer, i}
+  <Officer {...officer} imageright={true} photoLeft />
 {/each}
 
 <style>

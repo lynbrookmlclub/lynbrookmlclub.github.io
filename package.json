@@ -28,7 +28,9 @@
 	"type": "module",
 	"dependencies": {
 		"@tsconfig/svelte": "^3.0.0",
+		"node-sass": "^7.0.1",
 		"papercss": "^1.8.3",
+		"sass": "^1.54.2",
 		"spaper": "^0.8.6"
 	}
 }
