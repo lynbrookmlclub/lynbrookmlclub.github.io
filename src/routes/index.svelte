@@ -24,9 +24,7 @@
 
 <slot>
   <div class="row flex-center child-borders">
-    <button class="margin" size="large" href="https://discord.gg/p5tCyBeWAF"
-      ><img src="/src/icons/Discord.png" />Discord</button
-    >
+    <button class="margin" size="large" href="https://discord.gg/p5tCyBeWAF">
     <button class="margin" size="large" href="mailto:lhsmlclub@gmail.com"
       >Gmail</button
     >
