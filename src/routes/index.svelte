@@ -20,7 +20,16 @@
   <h1 class="inspire-text">At ML Club, we create the future.</h1>
 </div>
 
-<h1>Henry plz add link buttons here</h1>
+<slot>
+  <div class="row flex-center child-borders">
+    <button class="margin" size="large" href="https://discord.gg/p5tCyBeWAF" ><img src="/src/icons/Discord.png" />Discord</button>
+    <button class="margin" size="large" href="mailto:lhsmlclub@gmail.com">Gmail</button>
+    <button class="margin" size="large" href="https://github.com/lynbrookmlclub"> Github</button>
+    <button class="margin" size="large" href="/">Youtube</button>
+
+  </div>
+</slot>
+
 
 <div class="questions">
   <form on:submit|preventDefault={submitForm}>
@@ -39,6 +48,7 @@
       class="center-block"
       id="subject-text"
     />
+    http://localhost:5173/
     <div class="subtn" type="submit">
       <Button
         type="secondary"
@@ -55,6 +65,8 @@
 </div>
 
 <style>
+
+
   .other-links {
     color: black;
     font-size: 1.5em;
