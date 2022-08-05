@@ -1,5 +1,13 @@
 <script lang="ts">
   import Button from "spaper/components/Button.svelte";
+  import Fa from "svelte-fa";
+  import {
+    faDiscord,
+    faGithub,
+    faYoutube,
+  } from "@fortawesome/free-brands-svg-icons";
+  import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
   let email: string = "";
   let text: string = "";
 
@@ -14,7 +22,6 @@
       body: JSON.stringify({ email, text }),
     });
   }
-
 </script>
 
 <div class="ml-image">
@@ -23,18 +30,37 @@
 
 <slot>
   <div class="row flex-center child-borders">
-    <button class="margin" size="large" href="https://discord.gg/p5tCyBeWAF">
-    <button class="margin" size="large" href="mailto:lhsmlclub@gmail.com"
-      >Gmail</button
-    >
-    <button
+    <Button
       class="margin"
-      size="large"
+      size="default"
+      href="https://discord.gg/p5tCyBeWAF"
+      outline="primary"
+    >
+      <Fa icon={faDiscord} />
+      Discord
+    </Button>
+    <Button
+      class="margin"
+      size="default"
+      href="mailto:lhsmlclub@gmail.com"
+      outline="secondary"
+    >
+      <Fa icon={faEnvelope} />
+      Email
+    </Button>
+    <Button
+      class="margin"
+      size="default"
       href="https://github.com/lynbrookmlclub"
+      outline="primary"
     >
-      Github</button
-    >
-    <button class="margin" size="large" href="#">Youtube</button>
+      <Fa icon={faGithub} />
+      Github
+    </Button>
+    <Button class="margin" size="default" href="#" outline="danger">
+      <Fa icon={faYoutube} />
+      Youtube
+    </Button>
   </div>
 </slot>
 
