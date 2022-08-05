@@ -1,12 +1,10 @@
 <script lang="ts">
   import Button from "spaper/components/Button.svelte";
-  import Fa from "svelte-fa";
-  import {
-    faDiscord,
-    faGithub,
-    faYoutube,
-  } from "@fortawesome/free-brands-svg-icons";
-  import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+  import Fa from "svelte-fa/src/fa.svelte";
+  import { faDiscord } from "@fortawesome/free-brands-svg-icons/faDiscord";
+  import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
+  import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
+  import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
   let email: string = "";
   let text: string = "";
