@@ -20,21 +20,31 @@
 
 <div class="content"> 
     <div class="info-side">
-        <h1 class="main"> {name} - {title}, {yearName[grade]} </h1>
+        <h1 class="main"> {name} </h1>
+        <h2 class="title"> {title} </h2>
         <p class="short-phrase"> <small class="short-phrase"> {shortPhrase} </small> </p>    
         <div class="blurb-and-content">
             <p class="blurb"> {blurb} </p>
             <img src={photoURL} alt="Photo of {name}, the {title} of the ML Club this year." class="image"/>
         </div> 
     </div>
-</div> 
+</div>
 
+<hr>
+ 
 <style>
     .main {
         font-size: 2.75em;
         font-weight: bold;
         margin-top: 0.5em;
         margin-bottom: 0em;
+    }
+
+    .title {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
     }
 
     .short-phrase {
@@ -51,11 +61,14 @@
         font-size: 1.5em;
         inline-size: 50%;
         float: left;
+        margin: 0;
     }
 
     .image {
-        width: 10rem;
+        width: 11.5em;
         float: right;
+        margin: 0;
+        
     }
 
     .content {
