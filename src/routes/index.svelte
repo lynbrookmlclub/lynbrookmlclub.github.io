@@ -6,19 +6,18 @@
   import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
   import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
-
   let email: string = "";
   let text: string = "";
 
   async function submitForm() {
-
-    await fetch("https://formspree.io/f/mknewakj", {
+    const res = await fetch("https://formspree.io/f/mjvlopqj", {
       headers: {
         "Content-Type": "application/json",
-        "Data-Type": "json",},
+        "Data-Type": "json",
+      },
       method: "POST",
       mode: "no-cors",
-      body: JSON.stringify({ email, text })
+      body: JSON.stringify({ email, text }),
     });
   }
 </script>
@@ -64,22 +63,48 @@
 </slot>
 
 <div class="questions">
-  <form on:submit|preventDefault={submitForm} form action="https://api.staticforms.xyz/submit" method="post">
-    <input type="hidden" name="accessKey" value="fa895393-ac5f-4e1e-89f0-a511de35eaf0"> <!-- Required -->
+  <form on:submit|preventDefault={submitForm}>
+    <input
+      type="hidden"
+      name="accessKey"
+      value="fa895393-ac5f-4e1e-89f0-a511de35eaf0"
+    />
+    <!-- Required -->
     <input type="hidden" name="subject" value="Contact us from - example.com" />
 
-    <input type="email" placeholder="Email" bind:value={email} class="center-block" id="subject-email"/>
-    <textarea name="message" type="textarea" bind:value={text} placeholder="Message" class="center-block" id="subject-text"/>
-<!--   <h1>{email}</h1>-->
+    <input
+      type="email"
+      placeholder="Email"
+      bind:value={email}
+      class="center-block"
+      id="subject-email"
+    />
+    <textarea
+      name="message"
+      type="textarea"
+      bind:value={text}
+      placeholder="Message"
+      class="center-block"
+      id="subject-text"
+    />
+    <!--   <h1>{email}</h1>-->
 
-    <div class="subtn" type="submit">
-      <Button type="secondary" size="default" block outlined disabled={email == null || text == null ||email.length == 0 || text.length == 0}>Send!</Button>
+    <div class="subtn">
+      <Button
+        type="secondary"
+        size="default"
+        block
+        outlined
+        nativeType="submit"
+        disabled={email == null ||
+          text == null ||
+          email.length == 0 ||
+          text.length == 0}>Send!</Button
+      >
     </div>
-<!--    <input type="submit" value="Submit" />-->
-
+    <!--    <input type="submit" value="Submit" />-->
   </form>
 </div>
-
 
 <style>
   .other-links {
@@ -89,7 +114,7 @@
   }
 
   .ml-image {
-    background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-image: url("https://wallpaperaccess.com/full/1728960.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 26em;
