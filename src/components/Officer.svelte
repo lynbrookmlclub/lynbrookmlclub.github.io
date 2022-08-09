@@ -23,7 +23,7 @@
         <h1 class="main"> {name} </h1>
         <h2 class="title"> {title} </h2>
         <p class="short-phrase"> <small class="short-phrase"> {shortPhrase} </small> </p>    
-        <div class="blurb-and-content">
+        <div class="both">
             <p class="blurb"> {blurb} </p>
             <img src={photoURL} alt="Photo of {name}, the {title} of the ML Club this year." class="image"/>
         </div> 
@@ -47,6 +47,45 @@
         margin-bottom: 0.25em;
     }
 
+    .both {
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 600px) {
+        /** media query for cell phone devices right*/
+        .both {
+            flex-direction: column;
+        }
+        .blurb {
+            font-size: 1em;
+        }
+
+        .image {
+            height: 12em;
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        /** media query for cell phone devices right*/
+        .both {
+            flex-direction: row;
+        }
+        .blurb {
+            font-size: 1.5em;
+            inline-size: 45%;
+            float: left;
+            margin: 0;
+        }
+     
+        .image {
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            width: 50%;
+            float: right;
+        }
+    }
+
     .short-phrase {
         font-size: 1.1em;
         margin-top: 0.75em;
@@ -54,21 +93,7 @@
 
     .info-side {
         float: left; 
-        width: 25%;
-    }
-
-    .blurb {
-        font-size: 1.5em;
-        inline-size: 50%;
-        float: left;
-        margin: 0;
-    }
-
-    .image {
-        width: 11.5em;
-        float: right;
-        margin: 0;
-        
+        width: 50%;
     }
 
     .content {

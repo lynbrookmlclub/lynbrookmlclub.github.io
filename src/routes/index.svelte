@@ -7,7 +7,7 @@
   import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
 
-  let email: string = "ed";
+  let email: string = "";
   let text: string = "";
 
   async function submitForm() {
@@ -28,10 +28,10 @@
 </div>
 
 <slot>
-  <div class="row flex-center child-borders">
+  <div class="row flex-center child-borders buttons">
     <Button
       class="margin"
-      size="default"
+      size="large"
       href="https://discord.gg/p5tCyBeWAF"
       outline="primary"
     >
@@ -40,7 +40,7 @@
     </Button>
     <Button
       class="margin"
-      size="default"
+      size="large"
       href="mailto:lhsmlclub@gmail.com"
       outline="secondary"
     >
@@ -49,14 +49,14 @@
     </Button>
     <Button
       class="margin"
-      size="default"
+      size="large"
       href="https://github.com/lynbrookmlclub"
       outline="primary"
     >
       <Fa icon={faGithub} />
       Github
     </Button>
-    <Button class="margin" size="default" href="#" outline="danger">
+    <Button class="margin" size="large" href="#" outline="danger">
       <Fa icon={faYoutube} />
       Youtube
     </Button>
@@ -96,6 +96,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  a {
+    font-size: 2em;
   }
 
   .inspire-text {
