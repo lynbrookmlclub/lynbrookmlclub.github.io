@@ -7,7 +7,7 @@
     export let photoURL: string;
     export let photoLeft: boolean;
     export let imageright: boolean;
-    photoURL = "https://images.unsplash.com/photo-1659465398532-4d7ce2f5b46b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80";
+    
     const yearName: { [key: number]: string } = {
       9: "Freshman",
       10: "Sophomore",

@@ -22,91 +22,98 @@
   }
 </script>
 
-<div class="ml-image">
-  <h1 class="inspire-text">At ML Club, we create the future.</h1>
-</div>
-
-<slot>
-  <div class="row flex-center child-borders buttons">
-    <Button
-      class="margin"
-      size="large"
-      href="https://discord.gg/p5tCyBeWAF"
-      outline="primary"
-    >
-      <Fa icon={faDiscord} />
-      Discord
-    </Button>
-    <Button
-      class="margin"
-      size="large"
-      href="mailto:lhsmlclub@gmail.com"
-      outline="secondary"
-    >
-      <Fa icon={faEnvelope} />
-      Email
-    </Button>
-    <Button
-      class="margin"
-      size="large"
-      href="https://github.com/lynbrookmlclub"
-      outline="primary"
-    >
-      <Fa icon={faGithub} />
-      Github
-    </Button>
-    <Button class="margin" size="large" href="#" outline="danger">
-      <Fa icon={faYoutube} />
-      Youtube
-    </Button>
+<body> 
+  <div class="ml-image">
+    <h1 class="inspire-text">At ML Club, we create the future.</h1>
   </div>
-</slot>
 
-<div class="questions">
-  <form on:submit|preventDefault={submitForm}>
-    <input
-      type="hidden"
-      name="accessKey"
-      value="fa895393-ac5f-4e1e-89f0-a511de35eaf0"
-    />
-    <!-- Required -->
-    <input type="hidden" name="subject" value="Contact us from - example.com" />
-
-    <input
-      type="email"
-      placeholder="Email"
-      bind:value={email}
-      class="center-block"
-      id="subject-email"
-    />
-    <textarea
-      name="message"
-      type="textarea"
-      bind:value={text}
-      placeholder="Message"
-      class="center-block"
-      id="subject-text"
-    />
-    <!--   <h1>{email}</h1>-->
-
-    <div class="subtn">
+  <slot>
+    <div class="row flex-center child-borders buttons">
       <Button
-        type="secondary"
-        size="default"
-        block
-        outlined
-        nativeType="submit"
-        disabled={email == null ||
-          text == null ||
-          email.length == 0 ||
-          text.length == 0}>Send!</Button
+        class="margin"
+        size="large"
+        href="https://discord.gg/p5tCyBeWAF"
+        outline="primary"
       >
+        <Fa icon={faDiscord} />
+        Discord
+      </Button>
+      <Button
+        class="margin"
+        size="large"
+        href="mailto:lhsmlclub@gmail.com"
+        outline="secondary"
+      >
+        <Fa icon={faEnvelope} />
+        Email
+      </Button>
+      <Button
+        class="margin"
+        size="large"
+        href="https://github.com/lynbrookmlclub"
+        outline="primary"
+      >
+        <Fa icon={faGithub} />
+        Github
+      </Button>
+      <Button class="margin" size="large" href="#" outline="danger">
+        <Fa icon={faYoutube} />
+        Youtube
+      </Button>
     </div>
-    <!--    <input type="submit" value="Submit" />-->
-  </form>
-</div>
+  </slot>
+
+  <div class="questions">
+    <form on:submit|preventDefault={submitForm}>
+      <input
+        type="hidden"
+        name="accessKey"
+        value="fa895393-ac5f-4e1e-89f0-a511de35eaf0"
+      />
+      <!-- Required -->
+      <input type="hidden" name="subject" value="Contact us from - example.com" />
+
+      <input
+        type="email"
+        placeholder="Email"
+        bind:value={email}
+        class="center-block"
+        id="subject-email"
+      />
+      <textarea
+        name="message"
+        type="textarea"
+        bind:value={text}
+        placeholder="Message"
+        class="center-block"
+        id="subject-text"
+      />
+      <!--   <h1>{email}</h1>-->
+
+      <div class="subtn">
+        <Button
+          type="secondary"
+          size="default"
+          block
+          outlined
+          nativeType="submit"
+          disabled={email == null ||
+            text == null ||
+            email.length == 0 ||
+            text.length == 0}>Send!</Button
+        >
+      </div>
+      <!--    <input type="submit" value="Submit" />-->
+    </form>
+  </div>
+</body>
 
 <style>
+
+  body {
+    min-width: 1000px;
+  }
+
   .other-links {
     color: black;
     font-size: 1.5em;
@@ -121,10 +128,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  a {
-    font-size: 2em;
   }
 
   .inspire-text {
