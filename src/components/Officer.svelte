@@ -7,7 +7,7 @@
     export let photoURL: string;
     export let photoLeft: boolean;
     export let imageright: boolean;
-    
+
     const yearName: { [key: number]: string } = {
       9: "Freshman",
       10: "Sophomore",
@@ -58,11 +58,7 @@
             flex-direction: column;
         }
         .blurb {
-            font-size: 1em;
-        }
-
-        .image {
-            height: 12em;
+            font-size: 2em;
         }
     }
 
