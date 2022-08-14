@@ -14,7 +14,7 @@
     <li><a class="other-links" href={`${base}/signup`}>Sign Up</a></li>
   </ul>
 </Navbar>
-<slot />
+<slot></slot>
 
 <style> 
 </style>
