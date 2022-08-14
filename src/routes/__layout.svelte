@@ -4,6 +4,7 @@
   import { base } from "$app/paths";
 </script>
 
+
 <Navbar class="navbar">
   <h3 slot="brand">
     <a href={`${base}/`}>Lynbrook ML</a>
@@ -16,9 +17,4 @@
 <slot />
 
 <style> 
-  @media screen and (min-width: 600px) {
-    .navbar {
-      margin-left: 12.5%;
-    }
-  }
 </style>

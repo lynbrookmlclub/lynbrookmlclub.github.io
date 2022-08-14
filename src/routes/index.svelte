@@ -27,6 +27,7 @@
     <h1 class="inspire-text">At ML Club, we create the future.</h1>
   </div>
 
+  <h2 class="short-message"> We teach the future of computing. <br id="join-br"> Join us! </h2>
   <slot>
     <div class="row flex-center child-borders buttons">
       <Button
@@ -63,6 +64,7 @@
     </div>
   </slot>
 
+  <h3 class="questions-text"> Got Questions? Send them. </h3>
   <div class="questions">
     <form on:submit|preventDefault={submitForm}>
       <input
@@ -114,10 +116,31 @@
     min-width: 1000px;
   }
 
-  .other-links {
-    color: black;
-    font-size: 1.5em;
-    text-decoration: none;
+  .short-message {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  #join-br {
+    display: none;
+  }
+
+  .questions-text {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  @media (max-width: 600px) {
+    .buttons {
+      flex-direction: column;
+      margin-top: 3em;
+    }
+
+    #join-br {
+      display: block;
+      margin-top: 3em;
+    }
+  
   }
 
   .ml-image {
