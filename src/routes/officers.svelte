@@ -43,7 +43,6 @@
 <body>
   <h1 class="officer-header"> Officer Team 2022 </h1>
   <div class="officers-list">
-  <hr>
   {#each officers as officer, i}
     <Officer {...officer} imageright={true} photoLeft />
   {/each}

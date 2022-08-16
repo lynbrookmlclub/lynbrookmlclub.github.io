@@ -30,8 +30,6 @@
     </div>
 </div>
 
-
-<hr>
  
 <style>
     .main {
