@@ -7,7 +7,7 @@
 
 <nav>
   <h1 class="home-statement"> <a href={`${base}/`}> Lynbrook ML Club </a> </h1>
-  <ul class={`${base}/other-links`}> 
+  <ul class={`other-links`}> 
     <a href={`${base}/officers`}>About Us</a>
     <a href={`${base}/#contact`}> Contact Us </a> 
     <a href={`${base}/signup`}>Sign Up!</a>
@@ -31,7 +31,7 @@
   }
 
   .home-statement {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     margin-left: 1.5em;
@@ -39,13 +39,10 @@
 
   .other-links { 
     display: flex; 
-    flex-direction: row;  
-    margin-top: 0.5em;
-    margin-bottom: 0.5em; 
-    margin-right: 1.5em;
-
+    align-items: center;
+    font-size: 1em;
     gap: 1em;
-    font-size: 1.3em;
+    margin-right: 1.5em;
   }
 
 </style> 

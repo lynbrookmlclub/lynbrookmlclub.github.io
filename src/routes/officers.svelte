@@ -51,10 +51,6 @@
 </body>
 
 <style>
-
-  body {
-    min-width: 1250px;
-  }
   
   .officer-header {
     text-align: center;

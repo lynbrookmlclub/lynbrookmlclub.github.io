@@ -132,8 +132,6 @@
     font-size: 2em;
   }
 
-
-
   @media (max-width: 600px) {
     /** for cell phone devices */
     .questions-text {
