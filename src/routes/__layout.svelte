@@ -7,10 +7,10 @@
 
 <nav>
   <h1 class="home-statement"> <a href="/"> Lynbrook ML Club </a> </h1>
-  <ul class="other-links"> 
-    <a href="/officers">About Us</a>
-    <a href="/#contact"> Contact Us </a> 
-    <a href="/signup">Sign Up!</a>
+  <ul class={`${base}/other-links`}> 
+    <a href={`${base}/officers`}>About Us</a>
+    <a href={`${base}/#contact`}> Contact Us </a> 
+    <a href={`${base}/signup`}>Sign Up!</a>
   </ul> 
 </nav>
 
