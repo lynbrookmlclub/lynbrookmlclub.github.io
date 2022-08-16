@@ -6,7 +6,7 @@
 
 
 <nav>
-  <h1 class="home-statement"> <a href="/"> Lynbrook ML Club </a> </h1>
+  <h1 class="home-statement"> <a href={`${base}/`}> Lynbrook ML Club </a> </h1>
   <ul class={`${base}/other-links`}> 
     <a href={`${base}/officers`}>About Us</a>
     <a href={`${base}/#contact`}> Contact Us </a> 
