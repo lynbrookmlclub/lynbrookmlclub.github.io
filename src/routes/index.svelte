@@ -20,6 +20,7 @@
       body: JSON.stringify({ email, text }),
     });
   }
+
 </script>
 
 <body> 
@@ -64,7 +65,7 @@
     </div>
   </slot>
 
-  <h3 class="questions-text"> Got Questions? Send them. </h3>
+  <h3 class="questions-text" id="contact"> Got Questions? Send them. </h3>
   <div class="questions">
     <form on:submit|preventDefault={submitForm}>
       <input
@@ -114,6 +115,7 @@
 
   body {
     min-width: 1000px;
+    scroll-behavior: smooth;
   }
 
   .short-message {
@@ -130,7 +132,14 @@
     font-size: 2em;
   }
 
+
+
   @media (max-width: 600px) {
+    /** for cell phone devices */
+    .questions-text {
+      font-size: 3em;
+    }
+
     .buttons {
       flex-direction: column;
       margin-top: 3em;
@@ -139,6 +148,10 @@
     #join-br {
       display: block;
       margin-top: 3em;
+    }
+
+    #subject-text {
+      height: 15em;
     }
   
   }
@@ -163,6 +176,7 @@
 
   .questions {
     text-align: center;
+    margin-bottom: 1.5em;
   }
 
   #subject-text,
@@ -173,4 +187,9 @@
     width: 50%;
     margin-top: 2em;
   }
+
+  #subject-text {
+    height: 5em;
+  }
+
 </style>
