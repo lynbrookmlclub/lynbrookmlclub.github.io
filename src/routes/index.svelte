@@ -20,15 +20,16 @@
       body: JSON.stringify({ email, text }),
     });
   }
-
 </script>
 
-<body> 
+<body>
   <div class="ml-image">
     <h1 class="inspire-text">At ML Club, we create the future.</h1>
   </div>
 
-  <h2 class="short-message"> We teach the future of computing. <br id="join-br"> Join us! </h2>
+  <h2 class="short-message">
+    We teach the future of computing. <br id="join-br" /> Join us!
+  </h2>
   <slot>
     <div class="row flex-center child-borders buttons">
       <Button
@@ -65,7 +66,7 @@
     </div>
   </slot>
 
-  <h3 class="questions-text" id="contact"> Got Questions? Send them. </h3>
+  <h3 class="questions-text" id="contact">Got Questions? Send them.</h3>
   <div class="questions">
     <form on:submit|preventDefault={submitForm}>
       <input
@@ -74,7 +75,11 @@
         value="fa895393-ac5f-4e1e-89f0-a511de35eaf0"
       />
       <!-- Required -->
-      <input type="hidden" name="subject" value="Contact us from - example.com" />
+      <input
+        type="hidden"
+        name="subject"
+        value="Contact us from - example.com"
+      />
 
       <input
         type="email"
@@ -112,7 +117,6 @@
 </body>
 
 <style>
-
   body {
     min-width: 1000px;
     scroll-behavior: smooth;
@@ -151,7 +155,6 @@
     #subject-text {
       height: 15em;
     }
-  
   }
 
   .ml-image {
@@ -189,5 +192,4 @@
   #subject-text {
     height: 5em;
   }
-
 </style>

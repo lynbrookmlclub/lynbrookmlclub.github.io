@@ -1,5 +1,11 @@
-<script>export let user;</script>
-
-<style>strong { color: red }</style>
+<script>
+  export let user;
+</script>
 
 <strong>Hello, {user}</strong>
+
+<style>
+  strong {
+    color: red;
+  }
+</style>
