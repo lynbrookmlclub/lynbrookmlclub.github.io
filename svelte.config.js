@@ -19,7 +19,7 @@ const config = {
       // TODO remove this whole statement on full deploy
       // DO NOT TOUCH until the repo is moved to lynbrookml.github.io
       // if there are problems, it is elsewhere, not here
-      base: dev ? "" : "/temp.github.io",
+      base: dev ? "" : "",
     },
     prerender: {
       default: true,
