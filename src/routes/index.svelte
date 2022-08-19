@@ -117,10 +117,6 @@
 </body>
 
 <style>
-  body {
-    min-width: 1000px;
-    scroll-behavior: smooth;
-  }
 
   .short-message {
     font-size: 3em;
@@ -162,6 +158,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     height: 26em;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
