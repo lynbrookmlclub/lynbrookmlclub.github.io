@@ -1,9 +1,10 @@
 <script>
   import "papercss/dist/paper.css";
-  // import Navbar from "spaper/components/Navbar.svelte";
+  import Navbar from "spaper/components/Navbar.svelte";
   import { base } from "$app/paths";
 </script>
 
+<!--
 <nav>
   <h1 class="home-statement"><a href={`${base}/`}> Lynbrook ML Club </a></h1>
   <ul class={`other-links`}>
@@ -12,6 +13,19 @@
     <a href={`${base}/signup`}>Sign Up!</a>
   </ul>
 </nav>
+--> 
+
+<Navbar>
+  <h3 slot="brand">
+    <a href={`${base}/`}> Lynbrook ML Club </a>
+  </h3>
+  <ul class="inline">
+    <li><a href={`${base}/officers`}>About Us</a></li>
+    <li><a href={`${base}/#contact`}>Contact Us</a></li>
+    <li> <a href={`${base}/signup`}>Sign Up!</a> </li>
+  </ul>
+</Navbar>
+    
 
 <slot />
 

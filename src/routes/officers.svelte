@@ -14,6 +14,14 @@
   const paragraph : string = loremIpsum() + loremIpsum() + loremIpsum();
   const officers: Person[] = [
     {
+      name: "Cindy Chou", 
+      shortPhrase: "it is what it is", 
+      title: "President", 
+      grade: 12,
+      blurb: "Hi I'm Cindy! I joined ML club as a sophomore and became interested in the applications of machine learning in the medical field. I'm super excited to serve as the president this year, and some of my hobbies include walking, listening to Yoyo Ma's cello playing, trying new cuisines, and watching food Youtube shorts.",  
+      photoURL: "https://drive.google.com/uc?export=view&id=17Fkt-vaPBc2IVPW6c4xsTOb5_zvwMrZ-",
+    }, 
+    {
       name: "Anish Lakkapragada",
       shortPhrase: "anish the chad",
       title: "Co-VP",
