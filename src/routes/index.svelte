@@ -132,6 +132,24 @@
     font-size: 2em;
   }
 
+  .ml-image {
+    background-image: url("https://wallpaperaccess.com/full/1728960.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 26em;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inspire-text {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    margin-top: 0; 
+    margin-bottom: 0;
+  }
+
   @media (max-width: 600px) {
     /** for cell phone devices */
     .questions-text {
@@ -151,24 +169,12 @@
     #subject-text {
       height: 15em;
     }
+
+    .inspire-text {
+      font-size: 3em;
+    }
   }
 
-  .ml-image {
-    background-image: url("https://wallpaperaccess.com/full/1728960.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 26em;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .inspire-text {
-    color: white;
-    font-size: 5em;
-    text-align: center;
-  }
 
   /** questions form*/
 
