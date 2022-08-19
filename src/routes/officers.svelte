@@ -53,8 +53,16 @@
   
   .officer-header {
     text-align: center;
+    font-size: 5em;
   }
+
   .officers-list {
     margin-top: 1em;
+  }
+
+  @media (max-width: 600px) {
+    .officer-header {
+      font-size: 3em;
+    }
   }
 </style>

@@ -136,6 +136,7 @@
     background-image: url("https://wallpaperaccess.com/full/1728960.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 26em;
     display: flex; 
     justify-content: center;
