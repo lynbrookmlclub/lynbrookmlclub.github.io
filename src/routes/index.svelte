@@ -162,6 +162,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     height: 26em;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
