@@ -3,6 +3,8 @@ import preprocess from "svelte-preprocess";
 
 const dev = process.env.NODE_ENV === "development";
 
+// bruh work
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
@@ -15,12 +17,6 @@ const config = {
       assets: "build",
       fallback: "404.html",
     }),
-    paths: {
-      // TODO remove this whole statement on full deploy
-      // DO NOT TOUCH until the repo is moved to lynbrookml.github.io
-      // if there are problems, it is elsewhere, not here
-      base: "",
-    },
     prerender: {
       default: true,
     },
