@@ -24,18 +24,11 @@
     <li> <a href={`${base}/gallery`}> Gallery </a> </li>
     <li> <a href={`${base}/presentations`}> Presentations </a> </li>
     <li><a href={`${base}/#contact`}>Contact Us</a></li>
-<<<<<<< HEAD
-    <li class="signup"> <a href={`${base}/signup`}><em> Sign Up! </em></a> </li>
-  </ul>
-</Navbar>
-
-=======
     <li><a href={`${base}/signup`}>Sign Up!</a></li>
     <li><a href={`${base}/gallery`}>Gallery</a></li>
     <li><a href={`${base}/presentations`}>Presentations</a></li>
   </ul>
 </Navbar>
->>>>>>> 83bc1223acd82a681967044d04563ef948fcc753
 
 <slot />
 
