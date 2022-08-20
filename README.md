@@ -1,3 +1,3 @@
 # Lynbrook ML Club Website
 
-rip where the other contributors on the temp website at
+**bro we got 4 contributors on this website but only one star**
