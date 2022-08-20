@@ -9,7 +9,7 @@
     grade: number;
     blurb: string;
     photoURL: string;
-    infoLinks?: {[name: string]: string}; 
+    infoLinks: {[name: string]: string}; 
   }
 
   const paragraph : string = loremIpsum() + loremIpsum() + loremIpsum();
@@ -28,7 +28,7 @@
       shortPhrase: "anish the chad",
       title: "Co-VP",
       grade: 11,
-      blurb: "Anish is a clumsy junior who still doesn’t know how to center a div in HTML. He joined ML Club as a freshman and is excited to be an officer for two years. Aside from ML, he loves to work on websites and backends. Beyond coding, he enjoys photography and taking naps.",
+      blurb: "Hey there! I'm Anish. Anish is a clumsy junior who still doesn't know how to center a div in HTML. He joined ML Club as a freshman and is excited to be an officer for two years. Aside from ML, he loves to work on websites and backends. Beyond coding, he enjoys photography and taking naps.",
       photoURL: "https://microsites.databricks.com/sites/default/files/media/images/dataaisummit_speaker/databricks_headshot_1652326493620001EFzD.jpg",
       infoLinks: {"github": "anish-lakkapragada", "email": "anish.lakkapragada@gmail.com"}
     },
@@ -69,6 +69,17 @@
       infoLinks: {"email": "viprabind@gmail.com"}
     }
   ];
+
+  const replacements: {[name: string] : string} = {email: "mailto:", github: "https://github.com/"};
+  for (const officer of officers) {
+    const {infoLinks} = officer; 
+    for (const [name, value] of Object.entries(infoLinks)) {
+      const replacement: string = replacements[name]; 
+      officer.infoLinks[name] = replacement + officer.infoLinks[name]; 
+    }
+  }
+
+  console.log(officers);
 </script>
 
 <body>

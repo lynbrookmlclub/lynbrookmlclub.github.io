@@ -25,8 +25,6 @@
     <li> <a href={`${base}/presentations`}> Presentations </a> </li>
     <li><a href={`${base}/#contact`}>Contact Us</a></li>
     <li><a href={`${base}/signup`}>Sign Up!</a></li>
-    <li><a href={`${base}/gallery`}>Gallery</a></li>
-    <li><a href={`${base}/presentations`}>Presentations</a></li>
   </ul>
 </Navbar>
 

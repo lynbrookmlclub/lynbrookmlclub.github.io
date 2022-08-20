@@ -2,4 +2,4 @@
   import ComingSoon from "../components/ComingSoon.svelte";
 </script>
 
-<ComingSoon />
+<ComingSoon haveReturnButton={true} />

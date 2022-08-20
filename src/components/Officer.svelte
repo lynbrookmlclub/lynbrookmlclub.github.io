@@ -7,13 +7,24 @@
     export let photoURL: string;
     export let photoLeft: boolean;
     export let imageright: boolean;
-  
+    export let infoLinks: {[name: string]: string}; 
+
+    import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
+    import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub"; 
+    import Fa from "svelte-fa/src/fa.svelte";
+    
+    console.log(infoLinks);
     const yearName: { [key: number]: string } = {
       9: "Freshman",
       10: "Sophomore",
       11: "Junior",
       12: "Senior",
     };
+
+    const theme: {[prop: string]: string | number} = {
+      primaryColor: "black", 
+      scale: 1.3
+    }; 
   
     console.log(name);
   </script>
@@ -21,9 +32,18 @@
   <div class="content">
     <div class="info-side">
       <h1 class="main">{name}</h1>
-      <h2 class="title">{title}</h2>
+      <h2 class="title">{title} </h2>
       <p class="short-phrase">
         <small class="short-phrase"> {shortPhrase} </small>
+        {#each Object.entries(infoLinks) as [name, link]}
+          <a href={link} class="links"> 
+            {#if name === "github"}
+              <Fa {...theme} icon={faGithub} /> 
+            {:else if name == "email"}
+              <Fa {...theme} icon={faEnvelope} /> 
+            {/if}
+          </a>
+        {/each}
       </p>
       <div class="both">
         <p class="blurb">{blurb}</p>
@@ -49,6 +69,12 @@
       font-weight: bold;
       margin-top: 0.25em;
       margin-bottom: 0.25em;
+    }
+
+    .links {
+      background-image: none; 
+      margin-left: 0.25em;
+      margin-right: 0.25em;
     }
   
     .both {
