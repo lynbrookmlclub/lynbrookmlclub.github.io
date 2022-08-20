@@ -13,7 +13,7 @@
     <a href={`${base}/signup`}>Sign Up!</a>
   </ul>
 </nav>
---> 
+-->
 
 <Navbar>
   <h3 slot="brand">
@@ -22,10 +22,11 @@
   <ul class="inline">
     <li><a href={`${base}/officers`}>About Us</a></li>
     <li><a href={`${base}/#contact`}>Contact Us</a></li>
-    <li> <a href={`${base}/signup`}>Sign Up!</a> </li>
+    <li><a href={`${base}/signup`}>Sign Up!</a></li>
+    <li><a href={`${base}/gallery`}>Gallery</a></li>
+    <li><a href={`${base}/presentations`}>Presentations</a></li>
   </ul>
 </Navbar>
-    
 
 <slot />
 
