@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-476532e0.js",
+    "file": "_app/immutable/start-5a1ed825.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -18,7 +18,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-3e90ee85.js",
+    "file": "_app/immutable/pages/__layout.svelte-120e1350.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -52,7 +52,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-860d5a36.js",
+    "file": "_app/immutable/pages/index.svelte-1dfaa8f6.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -127,6 +127,10 @@
     "file": "_app/immutable/assets/ComingSoon-8f55c532.css",
     "src": "ComingSoon.css"
   },
+  "src/routes/officers.css": {
+    "file": "_app/immutable/assets/officers-766ddc62.css",
+    "src": "src/routes/officers.css"
+  },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-da9877b0.css",
     "src": "src/routes/index.css"
@@ -134,10 +138,6 @@
   "src/routes/signup.css": {
     "file": "_app/immutable/assets/signup-65c81857.css",
     "src": "src/routes/signup.css"
-  },
-  "src/routes/officers.css": {
-    "file": "_app/immutable/assets/officers-766ddc62.css",
-    "src": "src/routes/officers.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-fd756640.css",
