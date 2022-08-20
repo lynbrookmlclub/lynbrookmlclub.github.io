@@ -35,7 +35,7 @@
       <Button
         class="margin"
         size="large"
-        href="https://discord.gg/p5tCyBeWAF"
+        href="https://discord.gg/gVQBu6K6ad"
         outline="primary"
       >
         <Fa icon={faDiscord} />
@@ -59,7 +59,7 @@
         <Fa icon={faGithub} />
         Github
       </Button>
-      <Button class="margin" size="large" href="#" outline="danger">
+      <Button class="margin" size="large" href="https://www.youtube.com/channel/UCShf_xDi5yzcf61vRYtxzOg" outline="danger">
         <Fa icon={faYoutube} />
         Youtube
       </Button>

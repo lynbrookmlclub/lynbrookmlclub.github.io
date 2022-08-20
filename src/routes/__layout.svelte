@@ -15,17 +15,19 @@
 </nav>
 --> 
 
-<Navbar>
+<Navbar fixed>
   <h3 slot="brand">
     <a href={`${base}/`}> Lynbrook ML Club </a>
   </h3>
   <ul class="inline">
     <li><a href={`${base}/officers`}>About Us</a></li>
+    <li> <a href={`${base}/gallery`}> Gallery </a> </li>
+    <li> <a href={`${base}/presentations`}> Presentations </a> </li>
     <li><a href={`${base}/#contact`}>Contact Us</a></li>
-    <li> <a href={`${base}/signup`}>Sign Up!</a> </li>
+    <li class="signup"> <a href={`${base}/signup`}><em> Sign Up! </em></a> </li>
   </ul>
 </Navbar>
-    
+
 
 <slot />
 
