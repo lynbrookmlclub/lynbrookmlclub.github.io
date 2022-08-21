@@ -12,6 +12,7 @@
     import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
     import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub"; 
     import Fa from "svelte-fa/src/fa.svelte";
+    import Button from "spaper/components/Button.svelte";
     
     console.log(infoLinks);
     const yearName: { [key: number]: string } = {
@@ -33,18 +34,17 @@
     <div class="info-side">
       <h1 class="main">{name}</h1>
       <h2 class="title">{title} </h2>
-      <p class="short-phrase">
+      <p class="short-phrase buttons">
         <small class="short-phrase"> {shortPhrase} </small>
         {#each Object.entries(infoLinks) as [name, link]}
-          <a href={link} class="links"> 
-            {#if name === "github"}
-              <Fa {...theme} icon={faGithub} /> 
-            {:else if name == "email"}
-              <Fa {...theme} icon={faEnvelope} /> 
-            {/if}
-          </a>
-        {/each}
+              {#if name === "github"}
+                <Button outlined={false} href={link}> <Fa {...theme} icon={faGithub} />  </Button>
+              {:else if name == "email"}
+                <Button outlined={false} href={link} isLink={true}><Fa {...theme} icon={faEnvelope} /> </Button> 
+              {/if}
+          {/each}
       </p>
+
       <div class="both">
         <p class="blurb">{blurb}</p>
         <img
@@ -73,9 +73,14 @@
 
     .links {
       background-image: none; 
+      display: none;
       content: "";
       margin-left: 0.25em;
       margin-right: 0.25em;
+    }
+
+    .buttons {
+      margin-left: 0em;
     }
   
     .both {
