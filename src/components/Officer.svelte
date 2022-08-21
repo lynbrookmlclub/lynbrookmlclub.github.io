@@ -73,6 +73,7 @@
 
     .links {
       background-image: none; 
+      content: "";
       margin-left: 0.25em;
       margin-right: 0.25em;
     }
