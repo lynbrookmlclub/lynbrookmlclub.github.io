@@ -64,8 +64,8 @@
       shortPhrase: "we need one", 
       title: "Public Relations", 
       grade: 11, 
-      blurb: paragraph, 
-      photoURL: "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/250854156_407131807797681_2492226412003296312_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=RLEuFefvYdUAX97VxJ2&_nc_ht=scontent-sjc3-1.xx&oh=00_AT8IguKUn6spYpxJ3tx6YVUbtSS7Uhtwr2o4tTYm9yC9ew&oe=6305143B", 
+      blurb: "Hey, I’m Vipra (your PR officer this year)! I joined ML Club as a freshman and am enthralled with ML’s limitless applications. In my free time, I like reading about new ML applications, watching political news, and going on walks. So excited for everything in store this year!", 
+      photoURL: "/vipra.png", 
       infoLinks: {"email": "viprabind@gmail.com"}
     }
   ];
