@@ -11,6 +11,7 @@
 
     import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
     import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub"; 
+
     import Fa from "svelte-fa/src/fa.svelte";
     import Button from "spaper/components/Button.svelte";
     
@@ -73,8 +74,6 @@
 
     .links {
       background-image: none; 
-      display: none;
-      content: "";
       margin-left: 0.25em;
       margin-right: 0.25em;
     }
