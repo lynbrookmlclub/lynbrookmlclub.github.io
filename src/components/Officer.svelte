@@ -11,6 +11,7 @@
 
     import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
     import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub"; 
+
     import Fa from "svelte-fa/src/fa.svelte";
     
     console.log(infoLinks);
@@ -38,9 +39,9 @@
         {#each Object.entries(infoLinks) as [name, link]}
           <a href={link} class="links"> 
             {#if name === "github"}
-              <Fa {...theme} icon={faGithub} /> 
+              <span> <i> <Fa {...theme} icon={faGithub} /> </i> </span>
             {:else if name == "email"}
-              <Fa {...theme} icon={faEnvelope} /> 
+              <span> <i> <Fa {...theme} icon={faEnvelope} /> </i> </span>
             {/if}
           </a>
         {/each}
@@ -73,7 +74,6 @@
 
     .links {
       background-image: none; 
-      content: "";
       margin-left: 0.25em;
       margin-right: 0.25em;
     }
