@@ -64,7 +64,7 @@
       shortPhrase: "we need one", 
       title: "Public Relations", 
       grade: 11, 
-      blurb: "Hey, I’m Vipra (your PR officer this year)! I joined ML Club as a freshman and am enthralled with ML’s limitless applications. In my free time, I like reading about new ML applications, watching political news, and going on walks. So excited for everything in store this year!", 
+      blurb: "Hey, I'm Vipra (your PR officer this year)! I joined ML Club as a freshman and am enthralled with ML's limitless applications. In my free time, I like reading about new ML applications, watching political news, and going on walks. So excited for everything in store this year!", 
       photoURL: "/vipra.png", 
       infoLinks: {"email": "viprabind@gmail.com"}
     }
