@@ -37,7 +37,7 @@
       shortPhrase: "enjoyer of ",
       title: "Co-VP",
       grade: 11,
-      blurb: paragraph,
+      blurb: "Hi everyone, my name is Marc. I have been passionate about machine learning for 2-3 years now, and I am enthused to share what I know about the subject. My favorite aspect of the field is the activation function. I enjoy low level development, reading, music and walking in my spare time.",
       photoURL: "https://petitelamb65.qoom.space/Pellis/images/Marc.png",
       infoLinks: {"github": "novak-99", "email": "marc.melikyan@gmail.com"}
     },
