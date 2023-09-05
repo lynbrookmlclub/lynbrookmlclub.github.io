@@ -9,73 +9,69 @@
     grade: number;
     blurb: string;
     photoURL: string;
-    infoLinks: {[name: string]: string}; 
+    infoLinks: { [name: string]: string };
   }
 
-  const paragraph : string = loremIpsum() + loremIpsum() + loremIpsum();
+  const paragraph: string = loremIpsum() + loremIpsum() + loremIpsum();
   const officers: Person[] = [
     {
-      name: "Cindy Chou", 
-      shortPhrase: "it is what it is", 
-      title: "President", 
-      grade: 12,
-      blurb: "Hi I'm Cindy! I joined ML club as a sophomore and became interested in the applications of machine learning in the medical field. I'm super excited to serve as the president this year, and some of my hobbies include walking, listening to Yoyo Ma's cello playing, trying new cuisines, and watching food Youtube shorts.",  
-      photoURL: "/cindy.png", 
-      infoLinks: {"email": "cindychou8@gmail.com"}
-    }, 
-    {
       name: "Anish Lakkapragada",
-      shortPhrase: "anish the chad",
-      title: "Co-VP",
-      grade: 11,
-      blurb: "Hey there! I'm Anish. Anish is a clumsy junior who still doesn't know how to center a div in HTML. He joined ML Club as a freshman and is excited to be an officer for two years. Aside from ML, he loves to work on websites and backends. Beyond coding, he enjoys photography and taking naps.",
-      photoURL: "https://microsites.databricks.com/sites/default/files/media/images/dataaisummit_speaker/databricks_headshot_1652326493620001EFzD.jpg",
-      infoLinks: {"github": "anish-lakkapragada", "email": "anish.lakkapragada@gmail.com"}
+      shortPhrase: "whatever it takes!",
+      title: "President",
+      grade: 12,
+      blurb:
+        "Hey there! I'm Anish. Anish is a clumsy senior who still doesn't know how to center a div in HTML. He joined ML Club as a freshman and is excited to be an officer for two years. Aside from ML, he loves to work on websites and backends. Beyond coding, he enjoys photography and taking naps.",
+      photoURL:
+        "https://microsites.databricks.com/sites/default/files/media/images/dataaisummit_speaker/databricks_headshot_1652326493620001EFzD.jpg",
+      infoLinks: {
+        github: "anish-lakkapragada",
+        email: "anish.lakkapragada@gmail.com",
+      },
     },
     {
       name: "Marc Melikyan",
       shortPhrase: "enjoyer of ",
-      title: "Co-VP",
-      grade: 11,
-      blurb: "Hi everyone, my name is Marc. I have been passionate about machine learning for 2-3 years now, and I am enthused to share what I know about the subject. My favorite aspect of the field is the activation function. I enjoy low level development, reading, music and walking in my spare time.",
-      photoURL: "https://petitelamb65.qoom.space/Pellis/images/Marc.png",
-      infoLinks: {"github": "novak-99", "email": "marc.melikyan@gmail.com"}
-    },
-    {
-      name: "Agnik Banerjee",
-      shortPhrase: "i like trains and turtle",
-      title: "Secretary",
+      title: "President",
       grade: 12,
-      blurb: "Hi guys! I'm Agnik, and am excited to be Secretary this year. One of my big interests in ML at the moment is privacy-preserving AI and deploying healthcare-based models in edge environments. In my free time, I love playing tennis, listening to music, and hanging out with my dog.",
-      photoURL: "https://ca.slack-edge.com/E7SAV7LAD-U02403V7Z6K-2c0edfdb104a-512",
-      infoLinks: {"email": "agnik42@gmail.com"}
+      blurb:
+        "Hi everyone, my name is Marc. I have been passionate about machine learning for 2-3 years now, and I am enthused to share what I know about the subject. My favorite aspect of the field is the activation function. I enjoy low level development, reading, music and walking in my spare time.",
+      photoURL: "https://petitelamb65.qoom.space/Pellis/images/Marc.png",
+      infoLinks: { github: "novak-99", email: "marc.melikyan@gmail.com" },
     },
     {
-      name: "Lillian Yu", 
-      shortPhrase: "if it works, don't change it",
-      title: "Treasurer", 
-      grade: 12, 
-      blurb: "Hi there! I'm Lillian, and I am beyond thrilled to serve as the treasurer this year. I started developing an interest in ML my freshman year and I have been a passionate ML enthusiast eversince. Currently, I am conducting research in computational neurobiology using ML applications. Some fun facts about me are that I enjoy running, listening to cdrama OSTs, sketching and I have a cat named Leo.",
-      photoURL: "/lillian.png", 
-      infoLinks: {"email": "leeleeian89@gmail.com"}
-    }, 
+      name: "Vipra Bindal",
+      shortPhrase: "we need one",
+      title: "Vice President",
+      grade: 12,
+      blurb:
+        "Hey, I'm Vipra (your VP this year)! I joined ML Club as a freshman and am enthralled with ML's limitless applications. In my free time, I like reading about new ML applications, watching political news, and going on walks. So excited for everything in store this year!",
+      photoURL: "/vipra.png",
+      infoLinks: { email: "viprabind@gmail.com" },
+    },
     {
-      name: "Vipra Bindal", 
-      shortPhrase: "we need one", 
-      title: "Public Relations", 
-      grade: 11, 
-      blurb: "Hey, I'm Vipra (your PR officer this year)! I joined ML Club as a freshman and am enthralled with ML's limitless applications. In my free time, I like reading about new ML applications, watching political news, and going on walks. So excited for everything in store this year!", 
-      photoURL: "/vipra.png", 
-      infoLinks: {"email": "viprabind@gmail.com"}
-    }
+      name: "Vrishank Chandrasekhar",
+      shortPhrase: "",
+      title: "PR",
+      grade: 11,
+      blurb:
+        "Hi! I'm Vrishank. I joined ML club as a freshman and am passionate about creating tools to make point-of-care diagnostics more accurate, rapid, and interpretable through the use of deep learning, statistics, and (way too many) late nights. I'm super excited to serve as the PR officer this year, and some of my hobbies include singing, playing many instruments, and making education accessible for everyone.",
+      photoURL: "/vrishank.png",
+      infoLinks: {
+        email: "chandrasekharvrishank@gmail.com",
+        github: "vrishrankc",
+      },
+    },
   ];
 
-  const replacements: {[name: string] : string} = {email: "mailto:", github: "https://github.com/"};
+  const replacements: { [name: string]: string } = {
+    email: "mailto:",
+    github: "https://github.com/",
+  };
   for (const officer of officers) {
-    const {infoLinks} = officer; 
+    const { infoLinks } = officer;
     for (const [name, value] of Object.entries(infoLinks)) {
-      const replacement: string = replacements[name]; 
-      officer.infoLinks[name] = replacement + officer.infoLinks[name]; 
+      const replacement: string = replacements[name];
+      officer.infoLinks[name] = replacement + officer.infoLinks[name];
     }
   }
 
@@ -83,16 +79,15 @@
 </script>
 
 <body>
-  <h1 class="officer-header"> Officer Team 2022 </h1>
+  <h1 class="officer-header">Officer Team 2023-2024</h1>
   <div class="officers-list">
-  {#each officers as officer, i}
-    <Officer {...officer} imageright={true} photoLeft />
-  {/each}
+    {#each officers as officer, i}
+      <Officer {...officer} imageright={true} photoLeft />
+    {/each}
   </div>
 </body>
 
 <style>
-  
   .officer-header {
     text-align: center;
     font-size: 5em;
