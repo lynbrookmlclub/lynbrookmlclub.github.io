@@ -50,7 +50,7 @@
     },
     {
       name: "Vrishank Chandrasekhar",
-      shortPhrase: "",
+      shortPhrase: "i dont know what im doing",
       title: "PR",
       grade: 11,
       blurb:
@@ -59,6 +59,19 @@
       infoLinks: {
         email: "chandrasekharvrishank@gmail.com",
         github: "vrishrankc",
+      },
+    },
+    {
+      name: "Adarsh Iyer",
+      shortPhrase: "you're into machine learning? well, learn all the machines",
+      title: "Secretary",
+      grade: 12,
+      blurb:
+        " I'm Adarsh, and I'm glad to be your secretary this year! I've done a couple of projects in CV and Action Recognition. In my free time, I run for Lynbrook's Cross Country and Track teams, compose music, play the tuba and piano, animate short films, and read ML papers.",
+      photoURL: "/adarsh.png",
+      infoLinks: {
+        email: "adarsh.r.iyer@gmail.com",
+        github: "adarshramiyer",
       },
     },
   ];
