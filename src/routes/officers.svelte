@@ -74,6 +74,19 @@
         github: "adarshramiyer",
       },
     },
+    {
+      name: "Aadi Tiwari",
+      shortPhrase: "why does italian coke look like that",
+      title: "Treasurer",
+      grade: 12,
+      blurb:
+        "Hey there, I'm Aadi and am excited to be your treasurer this year! Even though I've only been learning about ML for a year, I am fascinated by the endless applications of it and how it ties into other developing fields or research such as quantum computing. In my free time, I love playing tennis, swimming, and hanging out with my friends. Hope to have a fun year with everyone! ",
+      photoURL: "/aadi.png",
+      infoLinks: {
+        email: "AadiTiwari1223@gmail.com",
+        github: "AadiTiwar1",
+      },
+    },
   ];
 
   const replacements: { [name: string]: string } = {
