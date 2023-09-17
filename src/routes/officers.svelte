@@ -50,7 +50,7 @@
     },
     {
       name: "Vrishank Chandrasekhar",
-      shortPhrase: "i dont know what im doing",
+      shortPhrase: "on da grind at all times",
       title: "PR",
       grade: 11,
       blurb:
@@ -58,7 +58,7 @@
       photoURL: "/vrishank.png",
       infoLinks: {
         email: "chandrasekharvrishank@gmail.com",
-        github: "vrishrankc",
+        github: "vrishankc",
       },
     },
     {
