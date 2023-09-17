@@ -16,7 +16,7 @@
   const officers: Person[] = [
     {
       name: "Anish Lakkapragada",
-      shortPhrase: "whatever it takes!",
+      shortPhrase: "i want to take a nap",
       title: "President",
       grade: 12,
       blurb:
